@@ -12,7 +12,7 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../index.html</link>
 	<description>Godot C# Tutorials</description>
-	<lastBuildDate>Sun, 16 Jun 2024 09:39:26 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 16 Jun 2024 10:34:14 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,22 +20,19 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.5.4</generator>
 	<item>
-		<title>Hello world!</title>
-		<link>./../hello-world/index.html</link>
-					<comments>./../hello-world/index.html#comments</comments>
+		<title>New Website</title>
+		<link>./../2024/06/16/new-website/index.html</link>
 		
-		<dc:creator><![CDATA[vidya]]></dc:creator>
-		<pubDate>Sun, 16 Jun 2024 09:39:26 +0000</pubDate>
-				<category><![CDATA[Uncategorized]]></category>
-		<guid isPermaLink="false">./../index.html?p=1</guid>
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sun, 16 Jun 2024 10:32:52 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">./../index.html?p=43</guid>
 
-					<description><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start writing!]]></description>
+					<description><![CDATA[I&#8217;ve been gearing up to make new Godot 4 C# tutorials and thought about how I could put a website [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+<p>I&#8217;ve been gearing up to make new Godot 4 C# tutorials and thought about how I could put a website together that had everything linked together in a sensible way. So, I just went ahead and put it up onto github like everything else.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>./../hello-world/feed/index.html</wfw:commentRss>
-			<slash:comments>1</slash:comments>
 		
 		
 			</item>
