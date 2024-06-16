@@ -8,10 +8,10 @@
 	>
 
 <channel>
-	<title>vidyagamemaka.github.io</title>
+	<title>VidyaGameMaka</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../index.html</link>
-	<description></description>
+	<description>Godot C# Tutorials</description>
 	<lastBuildDate>Sun, 16 Jun 2024 09:39:26 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
