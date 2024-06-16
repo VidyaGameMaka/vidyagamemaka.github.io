@@ -12,7 +12,7 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../index.html</link>
 	<description>Godot C# Tutorials</description>
-	<lastBuildDate>Sun, 16 Jun 2024 10:34:14 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 16 Jun 2024 10:44:03 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -31,6 +31,10 @@
 					<description><![CDATA[I&#8217;ve been gearing up to make new Godot 4 C# tutorials and thought about how I could put a website [&#8230;]]]></description>
 										<content:encoded><![CDATA[
 <p>I&#8217;ve been gearing up to make new Godot 4 C# tutorials and thought about how I could put a website together that had everything linked together in a sensible way. So, I just went ahead and put it up onto github like everything else.</p>
+
+
+
+<p>I put a good amount of thought pertaining to the display of this site and made sure to offer the option to change between light and dark mode.</p>
 ]]></content:encoded>
 					
 		
