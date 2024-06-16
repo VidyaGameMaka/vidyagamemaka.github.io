@@ -1,1 +1,0 @@
-# vidyagamemaka.github.io
