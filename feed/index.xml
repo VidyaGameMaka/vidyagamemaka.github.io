@@ -12,7 +12,7 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../index.html</link>
 	<description>Godot C# Tutorials</description>
-	<lastBuildDate>Sun, 16 Jun 2024 10:44:03 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 22 Jun 2024 18:58:10 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,21 +20,468 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=6.5.4</generator>
 	<item>
-		<title>New Website</title>
-		<link>./../2024/06/16/new-website/index.html</link>
+		<title>Godot 4 C# OptionButton &#8212; Setup, Signals &#038; Unexpected Behaviour</title>
+		<link>./../2024/06/22/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
-		<pubDate>Sun, 16 Jun 2024 10:32:52 +0000</pubDate>
-				<category><![CDATA[News]]></category>
-		<guid isPermaLink="false">./../index.html?p=43</guid>
+		<pubDate>Sat, 22 Jun 2024 18:56:22 +0000</pubDate>
+				<category><![CDATA[Godot4_Tutorials]]></category>
+		<guid isPermaLink="false">./../index.html?p=139</guid>
 
-					<description><![CDATA[I&#8217;ve been gearing up to make new Godot 4 C# tutorials and thought about how I could put a website [&#8230;]]]></description>
+					<description><![CDATA[The OptionButton node offers the functionality of a drop-down list that allows a user to choose a single item from [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<p>I&#8217;ve been gearing up to make new Godot 4 C# tutorials and thought about how I could put a website together that had everything linked together in a sensible way. So, I just went ahead and put it up onto github like everything else.</p>
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/Oe_KeKrHj6A?si=Y9B6bxuZXysSLtRh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
-<p>I put a good amount of thought pertaining to the display of this site and made sure to offer the option to change between light and dark mode.</p>
+<p>The OptionButton node offers the functionality of a drop-down list that allows a user to choose a single item from that list. However, in Godot, the way it works is not the way it seems.</p>
+
+
+
+<p>While I was doing my job I ran into unexpected behaviour of Godot&#8217;s OptionButton. The OptionButton didn&#8217;t send the ID I assigned! It send the index number of the option in the list.</p>
+
+
+
+<p>We&#8217;ll setup a small demo scene with a CanvasLayer, Control, and add an OptionButton on top. We&#8217;ll add a few entries to the OptionButton using code because that is how most people will use it.</p>
+
+
+
+<p>Then we&#8217;ll setup a signal to the script to see what the output of each option is. Last, I will show you how to make the OptionButton behave in a way that will provide the expected outcome.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Code and project is available for download: <a href="https://github.com/VidyaGameMaka/godot4tutorial/tree/main/optionbuttontest">https://github.com/VidyaGameMaka/godot4tutorial/tree/main/optionbuttontest</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 C# Tutorial #11 : Complete Non-Positional Audio for 2D Games</title>
+		<link>./../2024/06/22/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2024 18:54:04 +0000</pubDate>
+				<category><![CDATA[SaveLoadDelete]]></category>
+		<guid isPermaLink="false">./../index.html?p=136</guid>
+
+					<description><![CDATA[For the 2D games that I make it makes the most sense to me to have an Audio System that [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/6ysvai7a_6k?si=fetOysOtC9wxBm7N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<p>For the 2D games that I make it makes the most sense to me to have an Audio System that is non-positional. What this means is that the sound source is only in one place and the volume of the sound emitted from that source is the same throughout the entire game. This works well for my purposes. If you feel the need to do positional audio in 2D or espcially important in 3D you will need to utilize a different system. However, a lot of the code will be similar but you will need to do extra work to get positional audio setup in your project.</p>
+
+
+
+<p>The node AudioStreamPlayer plays non-positional audio and does not require an AudioListener node.</p>
+
+
+
+<p>In this project the following has been created as a automatically loaded scene: Scene: Snd_PFB and Script: Snd.cs &#8211; Sound Manager, This will be a very short name as I prefer to keep it short because it will be called frequently. instance will be just inst for the singleton for the script to further make the call shorter.</p>
+
+
+
+<p>The following will be in the Sound Manager (Snd_PFB) scene.</p>
+
+
+
+<ul>
+<li>1 AudioStreamPlayer &#8211; Music</li>
+
+
+
+<li>1 AudioStreamPlayer &#8211; Voice</li>
+
+
+
+<li>1 AudioStreamPlayer &#8211; Male</li>
+
+
+
+<li>1 AudioStreamPlayer &#8211; Female</li>
+
+
+
+<li>15 AudioStreamPlayer &#8211; SFX (This will allow us to play up to 15 different sound effects simultaneously.)</li>
+</ul>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Download files for this tutorial from github: <a href="https://github.com/VidyaGameMaka/godot4tutorial">https://github.com/VidyaGameMaka/godot4tutorial</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 C# Tutorial #10 : Video Menu</title>
+		<link>./../2024/06/22/godot-4-c-tutorial-10-video-menu/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2024 18:49:21 +0000</pubDate>
+				<category><![CDATA[SaveLoadDelete]]></category>
+		<guid isPermaLink="false">./../index.html?p=132</guid>
+
+					<description><![CDATA[In this tutorial I am going to dicuss Godot&#8217;s video modes and what I think will be the best Video [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/KddyACwDh8E?si=4RtbuYMivBigp_16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<p>In this tutorial I am going to dicuss Godot&#8217;s video modes and what I think will be the best Video Menu for 2D games. Programming the Video menu was pretty technical so I will be doing an explanation of the completed system instead of live coding in this video.</p>
+
+
+
+<p>I have the Video menu all hooked up to the main menu and it is ready to go. After that the initial settings from GameData need to be applied to the game on start. So the following methods have been moved or implemented into GameMaster.</p>
+
+
+
+<ul>
+<li>Initialization of Video Settings</li>
+
+
+
+<li>Audio Bus Index Setup</li>
+
+
+
+<li>Initialization of Audio Settings</li>
+</ul>
+
+
+
+<p>The application of the Video settings is handled by GameMaster so that GameMaster and VideoMenu can both apply video settings using one method.</p>
+
+
+
+<p>The Audio Bus index assignment has been moved to GameMaster so that the code is only written one time but will be able to be used by both GameMaster and AudioMenu.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Download the Godot Project Tutorial #10 from my github: <a href="https://github.com/VidyaGameMaka/godot4tutorial">https://github.com/VidyaGameMaka/godot4tutorial</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 C# Tutorial #9 : Menu Switcher</title>
+		<link>./../2024/06/22/godot-4-c-tutorial-9-menu-switcher/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2024 18:46:01 +0000</pubDate>
+				<category><![CDATA[SaveLoadDelete]]></category>
+		<guid isPermaLink="false">./../index.html?p=129</guid>
+
+					<description><![CDATA[Welcome back to another awesome C# godot tutorial with Vidya! So far we&#8217;ve created a great save, load, delete sytem, [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/JOU8gWWBH3E?si=GHAIkc-rf3DHoI9J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<p>Welcome back to another awesome C# godot tutorial with Vidya! So far we&#8217;ve created a great save, load, delete sytem, menu and audio menu. Now that we have two menus on our main menu it&#8217;s time to introduce a way to switch between them.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>To follow along you can download the previous lesson&#8217;s files, lesson 6: <a href="https://github.com/VidyaGameMaka/godot4tutorial">https://github.com/VidyaGameMaka/godot4tutorial</a></p>
+
+
+
+<p>If you want to follow-along with this lesson completed please use lesson 9&#8217;s files.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 C# Tutorial #8 : Save File Obfuscation (Optional / Recommend Skipping)</title>
+		<link>./../2024/06/22/godot-4-c-tutorial-8-save-file-obfuscation-optional-recommend-skipping/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2024 18:43:09 +0000</pubDate>
+				<category><![CDATA[Godot4_Tutorials]]></category>
+		<guid isPermaLink="false">./../index.html?p=126</guid>
+
+					<description><![CDATA[I recommend skipping this tutorial as it does more harm than good for your game development uses. If you&#8217;re interested [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/FWX72RW3Cag?si=DGkKwNf0LCZNWk4r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<p>I recommend skipping this tutorial as it does more harm than good for your game development uses. If you&#8217;re interested in just learning a little bit about computer security, then that&#8217;s fine otherwise just jump to the next video. Thank you.</p>
+
+
+
+<p>I had a question concerning protecting the save files we were making in Godot to prevent the end-user from modifying them. Many Unity save file tutorials utilize using BinaryFormatter, but Microsoft recommends against using it because it is insecure. BinaryFormatter exposes your users to an attack vector where sharing save files can lead to sharing viruses and malicious code injected by a malicious third party. Your game players will share your save files, so do it safely by just saving text files!</p>
+
+
+
+<p>I&#8217;ve been a game dev for almost a decade. I&#8217;m all about providing a superior experience to my customers. DRM implementations and most obfuscation only serve to hurt you and your customers.</p>
+
+
+
+<p>I decided to pull up my old tried and true bit flipper that I have used in the past to protect save files. While the script is named SimpleEncryptDecrypt, it is just a simple bit flipper. Since it is just flipping bits, the method, EncryptDecrypt is used for both saving and loading data. This makes for a very simple way to obfuscate the JSON string we&#8217;re using into something completely unintelligible for a human but trivial for a computer to read and write.</p>
+
+
+
+<p>The &#8220;protection&#8221; this offers is honestly completely nonexistent if approached by an experienced programmer since C# compiles to CIL (C# Intermediary Language). It is easily read and modified by CheatEngine or DotNetPeek. This will only stop beginners and non-programmers from editing their save files. An experienced programmer will defeat this obfuscation in a minute or two so the benefit it offers is basically none and only serves to make your diagnostics of save files more difficult during development. Even if you implement SHA1 or other &#8220;real&#8221; encryption method for your save files, it does not matter because C# does not truly compile down to binary code and your secret key will be discovered. An experienced programmer can read binary code therefore all programs ever written are readable anyways.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Download SimpleEncryptDecrypt script from my Github: <a href="https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial6_AudioMenu/Scripts/Main/Tools/SimpleEncryptDecrypt.cs">https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial6_AudioMenu/Scripts/Main/Tools/SimpleEncryptDecrypt.cs</a></p>
+
+
+
+<p><strong>Usage: </strong></p>
+
+
+
+<pre class="wp-block-code"><code>String myString = SimpleEncryptDecrypt.EncryptDecrypt(myString);</code></pre>
+
+
+
+<p>If you use this method to save your file, you must also use it when you load your file immediately after loading the file contents from the file system.1</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 C# Tutorial #7 : How did Vidya figure out Godot C# stuff so fast?</title>
+		<link>./../2024/06/22/godot-4-c-tutorial-7-how-did-vidya-figure-out-godot-c-stuff-so-fast/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2024 18:36:10 +0000</pubDate>
+				<category><![CDATA[Godot4_Tutorials]]></category>
+		<guid isPermaLink="false">./../index.html?p=124</guid>
+
+					<description><![CDATA[Alright, let&#8217;s do a little situation exercise. You&#8217;ve come from a background using Unity for the last five years or [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/_PANRMJoIRE?si=xWX-yzXKf5Wzb6ic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<p>Alright, let&#8217;s do a little situation exercise. You&#8217;ve come from a background using Unity for the last five years or more. Imagine that you have been tasked to provide information and tutorials for your co-workers about how to use Godot and C# as the scripting language.</p>
+
+
+
+<p>So, you set off on your way looking up tutorials but the majority of them are written in GDscript. When trying to write an equivalent script in C# you keep on having difficulty accessing some of the methods that are just given in GDscript, for example changing the audio volume using a float from 0 to 1 in GDScript is linear_to_db but C# is Mathf.LinearToDb? What&#8217;s up with that?</p>
+
+
+
+<p>In this tutorial I reveal my secrets about how I am so quickly learning Godot and doing it in C#. It may feel like C# has forsaken you until you realize one thing. Vidya&#8217;s secret! You need to Read The Manual!</p>
+
+
+
+<p>Particularly, I found it very helpful to read through the following documents:</p>
+
+
+
+<p>Cross Language Scripting: <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/cross_language_scripting.html">https://docs.godotengine.org/en/stable/tutorials/scripting/cross_language_scripting.html</a></p>
+
+
+
+<p>C# API differences to GDScript: <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/c_sharp/c_sharp_differences.html">https://docs.godotengine.org/en/stable/tutorials/scripting/c_sharp/c_sharp_differences.html</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 C# Tutorial #6 : Audio Menu</title>
+		<link>./../2024/06/22/119/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2024 18:30:19 +0000</pubDate>
+				<category><![CDATA[SaveLoadDelete]]></category>
+		<guid isPermaLink="false">./../index.html?p=119</guid>
+
+					<description><![CDATA[In this tutorial we do an overview of the Audio Menu. I show how to setup Godot&#8217;s Audio Bus, change [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/1RkKUIKadpI?si=gSwQRCTSjiMPxTBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<p>In this tutorial we do an overview of the Audio Menu. I show how to setup Godot&#8217;s Audio Bus, change audio bus volumes with Godot&#8217;s HSlider and show the end-user the Volume between 0 and 100 on the label.</p>
+
+
+
+<p>Download this tutorial&#8217;s complete code from my github repo:</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p><a href="https://github.com/VidyaGameMaka/godot4tutorial">https://github.com/VidyaGameMaka/godot4tutorial</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 C# Tutorial #5 : Animating like a Unity Programmer</title>
+		<link>./../2024/06/22/godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2024 18:16:10 +0000</pubDate>
+				<category><![CDATA[Godot4_Tutorials]]></category>
+		<guid isPermaLink="false">./../index.html?p=107</guid>
+
+					<description><![CDATA[To get started we will need some sprites or sprite-sheets. I have created sprite-sheets specifically for use in Godot which [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/nwbJ6gdeiHc?si=-WZHzvD96JfNZUq7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<p>To get started we will need some sprites or sprite-sheets. I have created sprite-sheets specifically for use in Godot which can be downloaded from my GIT repo. You can use your own sprite-sheets also.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Dino Images Zip: <a href="https://github.com/VidyaGameMaka/godot4tutorial/blob/main/FreeArt/DinoCharacter/FreeDinoSprite.zip">https://github.com/VidyaGameMaka/godot4tutorial/blob/main/FreeArt/DinoCharacter/FreeDinoSprite.zip</a></p>
+
+
+
+<p>If you are not following along with the previous tutorials that is fine, this is a standalone tutorial.<br>Drag the sprite sheets into:<br>Prefabs/Characters/Dino</p>
+
+
+
+<p>Create a new node and call it: DinoPlayer_PFB</p>
+
+
+
+<p>In folder: Prefabs/Characters/Dino</p>
+
+
+
+<ul>
+<li>CharacterBody2D
+<ul>
+<li>Sprite</li>
+
+
+
+<li>CollisionShape2D</li>
+
+
+
+<li>AnimationPlayer</li>
+</ul>
+</li>
+</ul>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 C# Tutorial #4 : Making the Main Menu</title>
+		<link>./../2024/06/22/godot-4-c-tutorial-4-making-the-main-menu/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2024 18:02:25 +0000</pubDate>
+				<category><![CDATA[SaveLoadDelete]]></category>
+		<guid isPermaLink="false">./../index.html?p=99</guid>
+
+					<description><![CDATA[Please download this tutorial&#8217;s resources from github. 🌟Tutorial Links 🌟 Download: https://github.com/VidyaGameMaka/godot4tutorial/ Click on the green code button then click [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/I0QzwAQJymY?si=W1fobEbA9JYUVON-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<p>Please download this tutorial&#8217;s resources from github.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Download: <a href="https://github.com/VidyaGameMaka/godot4tutorial/">https://github.com/VidyaGameMaka/godot4tutorial/</a></p>
+
+
+
+<p>Click on the green code button then click on download zip. Unzip the file and open the Godot project in the Tutorial 4 folder.</p>
+
+
+
+<p>In this tutorial I will be reviewing the main menu that will utilize the save/load/delete system.</p>
+
+
+
+<p>If you need a refresher on how to setup menu Buttons, Labels and Signals please refer to <a href="./../2024/06/22/godot-4-c-tutorial-2-creating-user-interfaces-reference-nodes-receive-node-signals/index.html" data-type="post" data-id="75">Tutorial #2</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 C# Tutorial #3 : Scene Manager &#8211; Change Scenes in Godot like a Unity DEV</title>
+		<link>./../2024/06/22/godot-4-c-tutorial-3-scene-manager-change-scenes-in-godot-like-a-unity-dev/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Sat, 22 Jun 2024 17:47:02 +0000</pubDate>
+				<category><![CDATA[SaveLoadDelete]]></category>
+		<guid isPermaLink="false">./../index.html?p=78</guid>
+
+					<description><![CDATA[To follow along make sure that you download Tutorial #3 from github: https://github.com/VidyaGameMaka/godo&#8230; Click on the code button and choose [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/IHvJd8BCRtI?si=aZ04n1Nbpkr5SelD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+<p>To follow along make sure that you download Tutorial #3 from github: <a href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqa1dnN1NaWnJwQUE5ZnBWc1gwMXdpZ1FzbldXZ3xBQ3Jtc0ttNnEzTEdXR3hRaUsydXlSbUNLdFVuT3JXRHVQT3VVMkFBWThUanhaQ2lPaHZJRmg5OFh3UkppenZOc1daaEpYOWRoS2txbW50MnZuVnlWNVVPMV9vUlJCQm8wSldZSW5TdUFRcU1aTWpienlCelRKMA&amp;q=https%3A%2F%2Fgithub.com%2FVidyaGameMaka%2Fgodot4tutorial&amp;v=IHvJd8BCRtI" target="_blank" rel="noreferrer noopener">https://github.com/VidyaGameMaka/godo&#8230;</a></p>
+
+
+
+<p>Click on the code button and choose Download ZIP. Unzip the file you downloaded and follow along by opening Tutorial3 in Godot 4.</p>
+
+
+
+<p>You must use the mono version of Godot and have your code editor configured.</p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+
+
+
+<p>Direct Links to the Scripts in Tutorial 3:<br>SceneData.cs : <a href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqa3pSZWpSUmN5amVlVm5ZTWVHcW16YmYtNkZvd3xBQ3Jtc0ttOXh6dFZ5OTFSVHBSbkk3Rm85OWVad0xZX3RpWGYyUWxsSnB1VE82cU01TU9zSUpqSjgwcVI1U1IzQ3dTVFg1NWhGWWVZTElSWjZZc1d3MzhiUjNjMGJuQXREWWJXNUg5Y0JJSzI1RW9FNS1oZHJjdw&amp;q=https%3A%2F%2Fgithub.com%2FVidyaGameMaka%2Fgodot4tutorial%2Fblob%2Fmain%2FTutorial3%2FScripts%2FSceneData.cs&amp;v=IHvJd8BCRtI" target="_blank" rel="noreferrer noopener">https://github.com/VidyaGameMaka/godo&#8230;</a><br>SceneManager.cs : <a href="https://www.youtube.com/redirect?event=video_description&amp;redir_token=QUFFLUhqa2FWcEcyOWRxQU1vcURoRXBNMGhfSGdVTmFlUXxBQ3Jtc0tuSEJ6cUswWWhlclJfbDZlRVhzaWNSc0lwcS13OVJwXzMzZWFhaG9QRGphYlk4QW5fclpXRXRPVGZfcVFjLXN4MngtUm5MSlltNjdTVWMxLXcyTWdZUmtxZVVYSzZuMms4dDc5dEFLSktDZXU5c1k5WQ&amp;q=https%3A%2F%2Fgithub.com%2FVidyaGameMaka%2Fgodot4tutorial%2Fblob%2Fmain%2FTutorial3%2FScripts%2FSceneManager.cs&amp;v=IHvJd8BCRtI" target="_blank" rel="noreferrer noopener">https://github.com/VidyaGameMaka/godo&#8230;</a></p>
+
+
+
+<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f525.png" alt="🔥" class="wp-smiley" style="height: 1em; max-height: 1em;" /> <strong>Change scene C# code snippet</strong></p>
+
+
+
+<pre class="wp-block-code"><code>GetTree().ChangeSceneToFile("res://path/to/scene.tscn");</code></pre>
 ]]></content:encoded>
 					
 		

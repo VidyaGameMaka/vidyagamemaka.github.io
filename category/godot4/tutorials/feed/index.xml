@@ -8,9 +8,9 @@
 	>
 
 <channel>
-	<title>VidyaGameMaka &#8211; VidyaGameMaka</title>
+	<title>Godot4_Tutorials &#8211; VidyaGameMaka</title>
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../index.html</link>
+	<link>./../../../../index.html</link>
 	<description>Godot C# Tutorials</description>
 	<lastBuildDate>Sat, 22 Jun 2024 18:58:10 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,12 +21,12 @@
 	<generator>https://wordpress.org/?v=6.5.4</generator>
 	<item>
 		<title>Godot 4 C# OptionButton &#8212; Setup, Signals &#038; Unexpected Behaviour</title>
-		<link>./../../../2024/06/22/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/index.html</link>
+		<link>./../../../../2024/06/22/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:56:22 +0000</pubDate>
 				<category><![CDATA[Godot4_Tutorials]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=139</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=139</guid>
 
 					<description><![CDATA[The OptionButton node offers the functionality of a drop-down list that allows a user to choose a single item from [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -62,12 +62,12 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #11 : Complete Non-Positional Audio for 2D Games</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/index.html</link>
+		<link>./../../../../2024/06/22/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:54:04 +0000</pubDate>
 				<category><![CDATA[SaveLoadDelete]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=136</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=136</guid>
 
 					<description><![CDATA[For the 2D games that I make it makes the most sense to me to have an Audio System that [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -125,12 +125,12 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #10 : Video Menu</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-10-video-menu/index.html</link>
+		<link>./../../../../2024/06/22/godot-4-c-tutorial-10-video-menu/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:49:21 +0000</pubDate>
 				<category><![CDATA[SaveLoadDelete]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=132</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=132</guid>
 
 					<description><![CDATA[In this tutorial I am going to dicuss Godot&#8217;s video modes and what I think will be the best Video [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -180,12 +180,12 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #9 : Menu Switcher</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-9-menu-switcher/index.html</link>
+		<link>./../../../../2024/06/22/godot-4-c-tutorial-9-menu-switcher/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:46:01 +0000</pubDate>
 				<category><![CDATA[SaveLoadDelete]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=129</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=129</guid>
 
 					<description><![CDATA[Welcome back to another awesome C# godot tutorial with Vidya! So far we&#8217;ve created a great save, load, delete sytem, [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -213,12 +213,12 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #8 : Save File Obfuscation (Optional / Recommend Skipping)</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-8-save-file-obfuscation-optional-recommend-skipping/index.html</link>
+		<link>./../../../../2024/06/22/godot-4-c-tutorial-8-save-file-obfuscation-optional-recommend-skipping/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:43:09 +0000</pubDate>
 				<category><![CDATA[Godot4_Tutorials]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=126</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=126</guid>
 
 					<description><![CDATA[I recommend skipping this tutorial as it does more harm than good for your game development uses. If you&#8217;re interested [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -270,12 +270,12 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #7 : How did Vidya figure out Godot C# stuff so fast?</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-7-how-did-vidya-figure-out-godot-c-stuff-so-fast/index.html</link>
+		<link>./../../../../2024/06/22/godot-4-c-tutorial-7-how-did-vidya-figure-out-godot-c-stuff-so-fast/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:36:10 +0000</pubDate>
 				<category><![CDATA[Godot4_Tutorials]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=124</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=124</guid>
 
 					<description><![CDATA[Alright, let&#8217;s do a little situation exercise. You&#8217;ve come from a background using Unity for the last five years or [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -311,12 +311,12 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #6 : Audio Menu</title>
-		<link>./../../../2024/06/22/119/index.html</link>
+		<link>./../../../../2024/06/22/119/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:30:19 +0000</pubDate>
 				<category><![CDATA[SaveLoadDelete]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=119</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=119</guid>
 
 					<description><![CDATA[In this tutorial we do an overview of the Audio Menu. I show how to setup Godot&#8217;s Audio Bus, change [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -344,12 +344,12 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #5 : Animating like a Unity Programmer</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html</link>
+		<link>./../../../../2024/06/22/godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:16:10 +0000</pubDate>
 				<category><![CDATA[Godot4_Tutorials]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=107</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=107</guid>
 
 					<description><![CDATA[To get started we will need some sprites or sprite-sheets. I have created sprite-sheets specifically for use in Godot which [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -403,12 +403,12 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #4 : Making the Main Menu</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-4-making-the-main-menu/index.html</link>
+		<link>./../../../../2024/06/22/godot-4-c-tutorial-4-making-the-main-menu/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:02:25 +0000</pubDate>
 				<category><![CDATA[SaveLoadDelete]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=99</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=99</guid>
 
 					<description><![CDATA[Please download this tutorial&#8217;s resources from github. 🌟Tutorial Links 🌟 Download: https://github.com/VidyaGameMaka/godot4tutorial/ Click on the green code button then click [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -436,7 +436,7 @@
 
 
 
-<p>If you need a refresher on how to setup menu Buttons, Labels and Signals please refer to <a href="./../../../2024/06/22/godot-4-c-tutorial-2-creating-user-interfaces-reference-nodes-receive-node-signals/index.html" data-type="post" data-id="75">Tutorial #2</a>.</p>
+<p>If you need a refresher on how to setup menu Buttons, Labels and Signals please refer to <a href="./../../../../2024/06/22/godot-4-c-tutorial-2-creating-user-interfaces-reference-nodes-receive-node-signals/index.html" data-type="post" data-id="75">Tutorial #2</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -444,12 +444,12 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #3 : Scene Manager &#8211; Change Scenes in Godot like a Unity DEV</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-3-scene-manager-change-scenes-in-godot-like-a-unity-dev/index.html</link>
+		<link>./../../../../2024/06/22/godot-4-c-tutorial-3-scene-manager-change-scenes-in-godot-like-a-unity-dev/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 17:47:02 +0000</pubDate>
 				<category><![CDATA[SaveLoadDelete]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=78</guid>
+		<guid isPermaLink="false">./../../../../index.html?p=78</guid>
 
 					<description><![CDATA[To follow along make sure that you download Tutorial #3 from github: https://github.com/VidyaGameMaka/godo&#8230; Click on the code button and choose [&#8230;]]]></description>
 										<content:encoded><![CDATA[
