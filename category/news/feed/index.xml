@@ -12,7 +12,7 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../index.html</link>
 	<description>Godot C# Tutorials</description>
-	<lastBuildDate>Sat, 22 Jun 2024 19:59:27 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 22 Jun 2024 20:11:23 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -43,11 +43,11 @@
 
 
 <ul>
-<li><a href="./../../godot4/tutorials/saveloaddelete/index.html" data-type="category" data-id="8">Godot 4 C# Save / Load Delete Series</a></li>
+<li><a href="./../../godot4/saveloaddelete/index.html" data-type="category" data-id="8">Godot 4 Save / Load / Delete Series</a></li>
 
 
 
-<li><a href="./../../godot4/tutorials/index.html" data-type="category" data-id="7">Standalone Tutorials</a></li>
+<li><a href="./../../godot4/gd4tutorials/index.html" data-type="category" data-id="7">Godot 4 Standalone Tutorials</a></li>
 </ul>
 
 
