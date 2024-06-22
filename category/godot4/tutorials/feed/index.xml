@@ -516,50 +516,5 @@
 		
 		
 			</item>
-		<item>
-		<title>Godot 4 C# Tutorial #1 &#8211; Save / Load / Delete System</title>
-		<link>./../../../../2024/06/22/godot-4-c-tutorial-1-save-load-delete-system/index.html</link>
-		
-		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
-		<pubDate>Sat, 22 Jun 2024 17:07:35 +0000</pubDate>
-				<category><![CDATA[SaveLoadDelete]]></category>
-		<guid isPermaLink="false">./../../../../index.html?p=52</guid>
-
-					<description><![CDATA[I cover how to autoload a C# script in godot, setup two classes for saving and loading data as well [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/pHubOcwN_Aw?si=3GjrV6qdqHU146-P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
-<p>I cover how to autoload a C# script in godot, setup two classes for saving and loading data as well as GameMaster to control it.</p>
-
-
-
-<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-
-
-
-<p><strong>Gihhub Repo:</strong> <a href="https://github.com/VidyaGameMaka/godot4tutorial/">https://github.com/VidyaGameMaka/godot4tutorial/</a></p>
-
-
-
-<p><strong>CSProj Snippett:</strong> <a href="https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial1/CSProjsnippett.txt">https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial1/CSProjsnippett.txt</a></p>
-
-
-
-<p><strong>GameMaster.cs:</strong> <a href="https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial1/Tutorial1/Scripts/GameMaster.cs">https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial1/Tutorial1/Scripts/GameMaster.cs</a></p>
-
-
-
-<p><strong>GameData.cs:</strong> <a href="https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial1/Tutorial1/Scripts/GameData.cs">https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial1/Tutorial1/Scripts/GameData.cs</a></p>
-
-
-
-<p><strong>PlayerData.cs</strong>: <a href="https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial1/Tutorial1/Scripts/PlayerData.cs">https://github.com/VidyaGameMaka/godot4tutorial/blob/main/Tutorial1/Tutorial1/Scripts/PlayerData.cs</a></p>
-]]></content:encoded>
-					
-		
-		
-			</item>
 	</channel>
 </rss>
