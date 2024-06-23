@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	 <link rel="profile" href="https://gmpg.org/xfn/11"> 
-	 <title>Godot 4 C# Tutorial #4 : Making the Main Menu &#8211; VidyaGameMaka</title>
+	 <title>Godot 4, VS Code &#038; .NET 8 Installation &#038; Configuration &#8211; VidyaGameMaka</title>
 <meta name="robots" content="max-image-preview:large">
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="alternate" type="application/rss+xml" title="VidyaGameMaka &raquo; Feed" href="./../../../../feed/index.html">
@@ -120,16 +120,16 @@ var DarklupJs = {"primary_bg":"rgb(39,40,39)","secondary_bg":"rgb(36,37,37)","te
 <script id="darklup_dynamic-js-before">let isOSDarkModeEnabled = false;let isKeyShortDarkModeEnabled = false;let isDefaultDarkModeEnabled = true;</script>
 <script src="./../../../../wp-content/plugins/darklup-lite-wp-dark-mode/assets/es-js/index.js?ver=3.0.240622180754" id="darklup_dynamic-js"></script>
 <link rel="https://api.w.org/" href="./../../../../wp-json/index.html">
-<link rel="alternate" type="application/json" href="./../../../../wp-json/wp/v2/posts/99/index.html">
+<link rel="alternate" type="application/json" href="./../../../../wp-json/wp/v2/posts/203/index.html">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../../../../xmlrpc.php?rsd">
 <meta name="generator" content="WordPress 6.5.4">
 <link rel="canonical" href="./index.html">
-<link rel="shortlink" href="./../../../../index.html?p=99">
-<link rel="alternate" type="application/json+oembed" href="./../../../../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F2024%2F06%2F22%2Fgodot-4-c-tutorial-4-making-the-main-menu%2F">
-<link rel="alternate" type="text/xml+oembed" href="./../../../../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F2024%2F06%2F22%2Fgodot-4-c-tutorial-4-making-the-main-menu%2F#038;format=xml">
+<link rel="shortlink" href="./../../../../index.html?p=203">
+<link rel="alternate" type="application/json+oembed" href="./../../../../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F2024%2F06%2F23%2Fgodot-4-vs-code-net-8-installation%2F">
+<link rel="alternate" type="text/xml+oembed" href="./../../../../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F2024%2F06%2F23%2Fgodot-4-vs-code-net-8-installation%2F#038;format=xml">
 <style></style>
 <style id="uagb-style-conditional-extension">@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}</style>
-<style id="uagb-style-frontend-99">.uag-blocks-common-selector{z-index:var(--z-index-desktop) !important}@media (max-width: 976px){.uag-blocks-common-selector{z-index:var(--z-index-tablet) !important}}@media (max-width: 767px){.uag-blocks-common-selector{z-index:var(--z-index-mobile) !important}}</style>		<style id="wp-custom-css">img{
+<style id="uagb-style-frontend-203">.uag-blocks-common-selector{z-index:var(--z-index-desktop) !important}@media (max-width: 976px){.uag-blocks-common-selector{z-index:var(--z-index-tablet) !important}}@media (max-width: 767px){.uag-blocks-common-selector{z-index:var(--z-index-mobile) !important}}</style>		<style id="wp-custom-css">img{
 	box-shadow:none !important;-moz-box-shadow:none !important;
 }
 
@@ -139,7 +139,7 @@ var DarklupJs = {"primary_bg":"rgb(39,40,39)","secondary_bg":"rgb(36,37,37)","te
 }</style>
 		</head>
 
-<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="post-template-default single single-post postid-99 single-format-standard ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-4.7.1 ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled">
+<body itemtype="https://schema.org/Blog" itemscope="itemscope" class="post-template-default single single-post postid-203 single-format-standard ast-desktop ast-separate-container ast-two-container ast-no-sidebar astra-4.7.1 ast-blog-single-style-1 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled">
 
 <a class="skip-link screen-reader-text" href="#content" role="link" title="Skip to content">
 		Skip to content</a>
@@ -178,10 +178,10 @@ var DarklupJs = {"primary_bg":"rgb(39,40,39)","secondary_bg":"rgb(36,37,37)","te
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
                 </svg></span></button>
 <ul class="sub-menu">
-	<li id="menu-item-188" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-188"><a href="./../../../../category/godot4/gd4tutorials/index.html" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+	<li id="menu-item-188" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-188"><a href="./../../../../category/godot4/gd4tutorials/index.html" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
                 </svg></span>Godot 4 Standalone Tutorials</a></li>
-	<li id="menu-item-189" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-189"><a href="./../../../../category/godot4/saveloaddelete/index.html" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
+	<li id="menu-item-189" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-189"><a href="./../../../../category/godot4/saveloaddelete/index.html" class="menu-link"><span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px" height="16.043px" viewbox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043" xml:space="preserve">
                 <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z"></path>
                 </svg></span>Godot 4 Save / Load / Delete Series</a></li>
 </ul>
@@ -253,7 +253,7 @@ var DarklupJs = {"primary_bg":"rgb(39,40,39)","secondary_bg":"rgb(36,37,37)","te
 					<main id="main" class="site-main">
 				
 
-<article class="post-99 post type-post status-publish format-standard has-post-thumbnail hentry category-saveloaddelete category-godot4 ast-article-single" id="post-99" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+<article class="post-203 post type-post status-publish format-standard has-post-thumbnail hentry category-gd4tutorials category-godot4 ast-article-single" id="post-203" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
 
 	
 	
@@ -264,14 +264,14 @@ var DarklupJs = {"primary_bg":"rgb(39,40,39)","secondary_bg":"rgb(36,37,37)","te
 		<header class="entry-header ">
 
 			
-			<h1 class="entry-title" itemprop="headline">Godot 4 C# Tutorial #4 : Making the Main Menu</h1>
+			<h1 class="entry-title" itemprop="headline">Godot 4, VS Code &#038; .NET 8 Installation &#038; Configuration</h1>
 <div class="entry-meta">By <span class="posted-by vcard author" itemtype="https://schema.org/Person" itemscope="itemscope" itemprop="author">			<a title="View all posts by VidyaGameMaka" href="./../../../../author/vidya/index.html" rel="author" class="url fn n" itemprop="url">
 				<span class="author-name" itemprop="name">
 				VidyaGameMaka			</span>
 			</a>
 		</span>
 
-		 / <span class="posted-on"><span class="published" itemprop="datePublished"> June 22, 2024 </span></span>
+		 / <span class="posted-on"><span class="published" itemprop="datePublished"> June 23, 2024 </span></span>
 </div>
 			
 		</header><!-- .entry-header -->
@@ -282,31 +282,324 @@ var DarklupJs = {"primary_bg":"rgb(39,40,39)","secondary_bg":"rgb(36,37,37)","te
 
 		
 		
-<iframe width="1120" height="630" src="https://www.youtube.com/embed/I0QzwAQJymY?si=W1fobEbA9JYUVON-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<p>This is a brief tutorial covering installation of Godot and required components.</p>
 
 
 
-<p>Please download this tutorial&#8217;s resources from github.</p>
+<p>The following is required to run Godot 4 C#:</p>
 
 
 
-<p>🌟<strong>Tutorial Links</strong> 🌟</p>
+<ul>
+<li>Godot 4 Engine .NET: <a href="https://godotengine.org/">https://godotengine.org/</a>
+</li>
 
 
 
-<p>Download: <a href="https://github.com/VidyaGameMaka/godot4tutorial/">https://github.com/VidyaGameMaka/godot4tutorial/</a></p>
+<li>.NET SDK 8: <a href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a>
+</li>
 
 
 
-<p>Click on the green code button then click on download zip. Unzip the file and open the Godot project in the Tutorial 4 folder.</p>
+<li>VS Code: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
+<ul>
+<li>C# Dev Kit (VS Code Extension)</li>
 
 
 
-<p>In this tutorial I will be reviewing the main menu that will utilize the save/load/delete system.</p>
+<li>IntelliCode for C# Dev Kit (Optional / Not Required)</li>
 
 
 
-<p>If you need a refresher on how to setup menu Buttons, Labels and Signals please refer to <a href="./../godot-4-c-tutorial-2-creating-user-interfaces-reference-nodes-receive-node-signals/index.html" data-type="post" data-id="75">Tutorial #2</a>.</p>
+<li>C# Tools for Godot (Optional / Not Required)</li>
+</ul>
+</li>
+
+
+
+<li>Godot &#8211; Configure Visual Studio Code as the External Editor</li>
+
+
+
+<li>Godot &#8211; Create C# Solution (Required)</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+
+
+
+<p><strong>Godot 4 C# Installation Instructions</strong></p>
+
+
+
+<ul>
+<li>Download Godot 4 .Net Version: <a href="https://godotengine.org/">https://godotengine.org/</a>
+</li>
+
+
+
+<li>Right click and choose Extract all Files</li>
+
+
+
+<li>Create a folder on your C: drive and name it C:\GodotEditors</li>
+
+
+
+<li>This is where all of your Godot editors can live.</li>
+
+
+
+<li>Copy the entire folder you just extracted into this new folder.</li>
+
+
+
+<li>Right Click on Godot_(v#.#.#)-stable_win64.exe and choose Create Shortcut</li>
+
+
+
+<li>Copy this shortcut to your Desktop or pin it to your Start Menu or Taskbar, whichever you prefer.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+
+
+
+<p><strong>.NET SDK 8 Installation</strong></p>
+
+
+
+<p>As of the date of this article, Godot uses .NET SDK 8. It is the only SDK you need to have installed.</p>
+
+
+
+<ul>
+<li>Download .NET 8 SDK: <a href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a>
+</li>
+
+
+
+<li>Install the .NET SDK with the default options.</li>
+
+
+
+<li>No further configuration is required.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+
+
+
+<p><strong>VS Code Installation</strong></p>
+
+
+
+<ul>
+<li>Download VS Code: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
+</li>
+
+
+
+<li>It is easiest to install VS Code on a per-user basis. So the download file you received should be named:<br>VSCodeUserSetup-x64-(X.XX.X).exe</li>
+
+
+
+<li>Choose the default install location.</li>
+
+
+
+<li>Click next until you arrive at the Select Additional Tasks Window. Place a checkmark next to all of the additional tasks.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="815" src="./../../../../wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png" alt="" class="wp-image-205" srcset="./../../../../wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png 1024w, ./../../../../wp-content/uploads/2024/06/vscode-additional-tasks-300x239.png 300w, ./../../../../wp-content/uploads/2024/06/vscode-additional-tasks-768x611.png 768w, ./../../../../wp-content/uploads/2024/06/vscode-additional-tasks.png 1296w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<ul>
+<li>Click Next</li>
+
+
+
+<li>Click Install</li>
+
+
+
+<li>Installation of VS Code is completed</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+
+
+
+<p><strong>Configuration of VS Code</strong></p>
+
+
+
+<ul>
+<li>Open Visual Studio Code</li>
+
+
+
+<li>Click on the Extensions Button on the left side menu</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="567" height="779" src="./../../../../wp-content/uploads/2024/06/vscode-extensions-menu.png" alt="" class="wp-image-207" srcset="./../../../../wp-content/uploads/2024/06/vscode-extensions-menu.png 567w, ./../../../../wp-content/uploads/2024/06/vscode-extensions-menu-218x300.png 218w" sizes="(max-width: 567px) 100vw, 567px"></figure>
+
+
+
+<ul>
+<li>In the Search Box type: C# Dev Kit</li>
+
+
+
+<li>Install C# Dev Kit</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="928" height="744" src="./../../../../wp-content/uploads/2024/06/vscode_c_dev_kit.png" alt="" class="wp-image-208" srcset="./../../../../wp-content/uploads/2024/06/vscode_c_dev_kit.png 928w, ./../../../../wp-content/uploads/2024/06/vscode_c_dev_kit-300x241.png 300w, ./../../../../wp-content/uploads/2024/06/vscode_c_dev_kit-768x616.png 768w" sizes="(max-width: 928px) 100vw, 928px"></figure>
+
+
+
+<ul>
+<li>Optional: Search for and Install: IntelliCode for C# Dev Kit. This extension is not required but will assist you with writing code.</li>
+
+
+
+<li>Optional: Search for and Install: C# Tools for Godot
+<ul>
+<li>Additional configuration for this module is required. Please visit: <a href="https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode">https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode</a> for further instructions.</li>
+</ul>
+</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+
+
+
+<p><strong>Godot &#8211; Configure Visual Studio Code as the External Editor</strong></p>
+
+
+
+<ul>
+<li>Open Godot. When you open Godot, it will open with the Project Manager.</li>
+
+
+
+<li>Create a new project.</li>
+
+
+
+<li>I recommend creating a folder on your root C: or other disk drive that you have to store your Godot Projects so that they are easy to locate and the folder path is short. Windows still has a limit of 255 characters for a path so storing a Godot project in your user folder is strongly discouraged! I have multiple hard drives on my system. C: drive holds my operating system and programs. D: Holds my project files. E: is my backup drive where I backup my files every night. I&#8217;m currently using Syncback SE Free.</li>
+
+
+
+<li>Click on Browse.</li>
+
+
+
+<li>Create a folder on your hard drive named D:\_GodotGames</li>
+
+
+
+<li>Create a folder inside D:\_GodotGames and name it config</li>
+
+
+
+<li>For Project name you can call it config, you can delete this project once you are finished configuring Godot.</li>
+
+
+
+<li>Your Project Name and Project folder should be the same name.</li>
+
+
+
+<li>When you are finished your dialogue window should look like below.</li>
+
+
+
+<li>Click Create &amp; Edit (This will open Godot)</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="632" src="./../../../../wp-content/uploads/2024/06/godot4config1-1024x632.png" alt="" class="wp-image-215" srcset="./../../../../wp-content/uploads/2024/06/godot4config1-1024x632.png 1024w, ./../../../../wp-content/uploads/2024/06/godot4config1-300x185.png 300w, ./../../../../wp-content/uploads/2024/06/godot4config1-768x474.png 768w, ./../../../../wp-content/uploads/2024/06/godot4config1-1536x948.png 1536w, ./../../../../wp-content/uploads/2024/06/godot4config1-2048x1265.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<ul>
+<li>Click On Editor -> Editor Settings</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="227" src="./../../../../wp-content/uploads/2024/06/godot4editorsettings-1024x227.png" alt="" class="wp-image-216" srcset="./../../../../wp-content/uploads/2024/06/godot4editorsettings-1024x227.png 1024w, ./../../../../wp-content/uploads/2024/06/godot4editorsettings-300x67.png 300w, ./../../../../wp-content/uploads/2024/06/godot4editorsettings-768x171.png 768w, ./../../../../wp-content/uploads/2024/06/godot4editorsettings.png 1031w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<ul>
+<li>Scroll the left menu to the very bottom. We are specifically looking for the <strong>Dotnet</strong> category then <strong>Editor</strong>.</li>
+
+
+
+<li>Click on External Editor and choose: Visual Studio Code</li>
+
+
+
+<li>Remove all text from Custom Exec Path Args if any are present</li>
+
+
+
+<li>Click Close</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="833" src="./../../../../wp-content/uploads/2024/06/godot4dotnetconfig-1024x833.png" alt="" class="wp-image-218" srcset="./../../../../wp-content/uploads/2024/06/godot4dotnetconfig-1024x833.png 1024w, ./../../../../wp-content/uploads/2024/06/godot4dotnetconfig-300x244.png 300w, ./../../../../wp-content/uploads/2024/06/godot4dotnetconfig-768x625.png 768w, ./../../../../wp-content/uploads/2024/06/godot4dotnetconfig-1536x1249.png 1536w, ./../../../../wp-content/uploads/2024/06/godot4dotnetconfig.png 1804w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+
+
+
+<p><strong>Godot &#8211; Create C# Solution (Required)</strong></p>
+
+
+
+<p>By default Godot does not create a C# solution file when a new game project is created. This only needs to be done one time after the creation of a Godot project.</p>
+
+
+
+<ul>
+<li>To create a C# Solution click: Project -> Tools -> C# -> Create C# solution</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="471" src="./../../../../wp-content/uploads/2024/06/godot4createsolution-1024x471.png" alt="" class="wp-image-219" srcset="./../../../../wp-content/uploads/2024/06/godot4createsolution-1024x471.png 1024w, ./../../../../wp-content/uploads/2024/06/godot4createsolution-300x138.png 300w, ./../../../../wp-content/uploads/2024/06/godot4createsolution-768x353.png 768w, ./../../../../wp-content/uploads/2024/06/godot4createsolution-1536x706.png 1536w, ./../../../../wp-content/uploads/2024/06/godot4createsolution.png 1658w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+
+
+
+<p>This concludes this installation guide.</p>
 
 		
 		
@@ -320,10 +613,7 @@ var DarklupJs = {"primary_bg":"rgb(39,40,39)","secondary_bg":"rgb(36,37,37)","te
 
 	        <nav class="navigation post-navigation" role="navigation" aria-label="Post navigation">
 	                <span class="screen-reader-text">Post navigation</span>
-	                <div class="nav-links">
-<div class="nav-previous"><a title="Godot 4 C# Tutorial #3 : Scene Manager - Change Scenes in Godot like a Unity DEV" href="./../godot-4-c-tutorial-3-scene-manager-change-scenes-in-godot-like-a-unity-dev/index.html" rel="prev"><span class="ast-post-nav"><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path></svg></span> Previous</span> <p> Godot 4 C# Tutorial #3 : Scene Manager &#8211; Change Scenes in Godot like a Unity DEV </p></a></div>
-<div class="nav-next"><a title="Godot 4 C# Tutorial #5 : Animating like a Unity Programmer" href="./../godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html" rel="next"><span class="ast-post-nav">Next <span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M313.941 216H12c-6.627 0-12 5.373-12 12v56c0 6.627 5.373 12 12 12h301.941v46.059c0 21.382 25.851 32.09 40.971 16.971l86.059-86.059c9.373-9.373 9.373-24.569 0-33.941l-86.059-86.059c-15.119-15.119-40.971-4.411-40.971 16.971V216z"></path></svg></span></span> <p> Godot 4 C# Tutorial #5 : Animating like a Unity Programmer </p></a></div>
-</div>
+	                <div class="nav-links"><div class="nav-previous"><a title="Godot 4 C# OptionButton -- Setup, Signals &amp; Unexpected Behaviour" href="./../../22/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/index.html" rel="prev"><span class="ast-post-nav"><span class="ahfb-svg-iconset ast-inline-flex svg-baseline"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"></path></svg></span> Previous</span> <p> Godot 4 C# OptionButton &#8212; Setup, Signals &#038; Unexpected Behaviour </p></a></div></div>
 	        </nav>			</main><!-- #main -->
 			
 		
