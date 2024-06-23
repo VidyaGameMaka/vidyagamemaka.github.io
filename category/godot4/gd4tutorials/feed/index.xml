@@ -21,7 +21,7 @@
 	<generator>https://wordpress.org/?v=6.5.4</generator>
 	<item>
 		<title>Godot 4, VS Code &#038; .NET 8 Installation &#038; Configuration</title>
-		<link>./../../../../2024/06/23/godot-4-vs-code-net-8-installation/index.html</link>
+		<link>./../../../../godot4/godot-4-vs-code-net-8-installation/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sun, 23 Jun 2024 16:10:54 +0000</pubDate>
@@ -351,7 +351,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# OptionButton &#8212; Setup, Signals &#038; Unexpected Behaviour</title>
-		<link>./../../../../2024/06/22/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/index.html</link>
+		<link>./../../../../godot4/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:56:22 +0000</pubDate>
@@ -389,7 +389,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #8 : Save File Obfuscation (Optional / Recommend Skipping)</title>
-		<link>./../../../../2024/06/22/godot-4-c-tutorial-8-save-file-obfuscation-optional-recommend-skipping/index.html</link>
+		<link>./../../../../godot4/godot-4-c-tutorial-8-save-file-obfuscation-optional-recommend-skipping/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:43:09 +0000</pubDate>
@@ -447,7 +447,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #7 : How did Vidya figure out Godot C# stuff so fast?</title>
-		<link>./../../../../2024/06/22/godot-4-c-tutorial-7-how-did-vidya-figure-out-godot-c-stuff-so-fast/index.html</link>
+		<link>./../../../../godot4/godot-4-c-tutorial-7-how-did-vidya-figure-out-godot-c-stuff-so-fast/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:36:10 +0000</pubDate>
@@ -489,7 +489,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #5 : Animating like a Unity Programmer</title>
-		<link>./../../../../2024/06/22/godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html</link>
+		<link>./../../../../godot4/godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:16:10 +0000</pubDate>

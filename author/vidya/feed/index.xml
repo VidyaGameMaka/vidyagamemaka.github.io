@@ -21,7 +21,7 @@
 	<generator>https://wordpress.org/?v=6.5.4</generator>
 	<item>
 		<title>Godot 4, VS Code &#038; .NET 8 Installation &#038; Configuration</title>
-		<link>./../../../2024/06/23/godot-4-vs-code-net-8-installation/index.html</link>
+		<link>./../../../godot4/godot-4-vs-code-net-8-installation/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sun, 23 Jun 2024 16:10:54 +0000</pubDate>
@@ -351,7 +351,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# OptionButton &#8212; Setup, Signals &#038; Unexpected Behaviour</title>
-		<link>./../../../2024/06/22/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/index.html</link>
+		<link>./../../../godot4/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:56:22 +0000</pubDate>
@@ -389,7 +389,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #11 : Complete Non-Positional Audio for 2D Games</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/index.html</link>
+		<link>./../../../godot4/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:54:04 +0000</pubDate>
@@ -453,7 +453,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #10 : Video Menu</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-10-video-menu/index.html</link>
+		<link>./../../../godot4/godot-4-c-tutorial-10-video-menu/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:49:21 +0000</pubDate>
@@ -509,7 +509,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #9 : Menu Switcher</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-9-menu-switcher/index.html</link>
+		<link>./../../../godot4/godot-4-c-tutorial-9-menu-switcher/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:46:01 +0000</pubDate>
@@ -543,7 +543,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #8 : Save File Obfuscation (Optional / Recommend Skipping)</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-8-save-file-obfuscation-optional-recommend-skipping/index.html</link>
+		<link>./../../../godot4/godot-4-c-tutorial-8-save-file-obfuscation-optional-recommend-skipping/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:43:09 +0000</pubDate>
@@ -601,7 +601,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #7 : How did Vidya figure out Godot C# stuff so fast?</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-7-how-did-vidya-figure-out-godot-c-stuff-so-fast/index.html</link>
+		<link>./../../../godot4/godot-4-c-tutorial-7-how-did-vidya-figure-out-godot-c-stuff-so-fast/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:36:10 +0000</pubDate>
@@ -643,7 +643,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #6 : Audio Menu</title>
-		<link>./../../../2024/06/22/119/index.html</link>
+		<link>./../../../godot4/119/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:30:19 +0000</pubDate>
@@ -677,7 +677,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #5 : Animating like a Unity Programmer</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html</link>
+		<link>./../../../godot4/godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:16:10 +0000</pubDate>
@@ -737,7 +737,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #4 : Making the Main Menu</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-4-making-the-main-menu/index.html</link>
+		<link>./../../../godot4/godot-4-c-tutorial-4-making-the-main-menu/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:02:25 +0000</pubDate>
@@ -779,7 +779,7 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #3 : Scene Manager &#8211; Change Scenes in Godot like a Unity DEV</title>
-		<link>./../../../2024/06/22/godot-4-c-tutorial-3-scene-manager-change-scenes-in-godot-like-a-unity-dev/index.html</link>
+		<link>./../../../godot4/godot-4-c-tutorial-3-scene-manager-change-scenes-in-godot-like-a-unity-dev/index.html</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 17:47:02 +0000</pubDate>
