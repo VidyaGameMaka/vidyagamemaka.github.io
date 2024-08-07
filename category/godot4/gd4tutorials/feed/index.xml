@@ -12,7 +12,7 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../../../../index.html</link>
 	<description>Godot C# Tutorials</description>
-	<lastBuildDate>Wed, 07 Aug 2024 05:24:11 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 07 Aug 2024 06:45:17 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -30,6 +30,10 @@
 
 					<description><![CDATA[You may create a new project from scratch or use your Godot 4 existing project to follow along with this [&#8230;]]]></description>
 										<content:encoded><![CDATA[
+<iframe width="1120" height="630" src="https://www.youtube.com/embed/fAR_DssAig8?si=yMU5G1bcpAXjoDpG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
 <p>You may create a new project from scratch or use your Godot 4 existing project to follow along with this tutorial.</p>
 
 
@@ -265,7 +269,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-full"><img decoding="async" width="564" height="786" src="./../../../../wp-content/uploads/2024/07/godot4gamebasefolder1.png" alt="" class="wp-image-251" srcset="./../../../../wp-content/uploads/2024/07/godot4gamebasefolder1.png 564w, ./../../../../wp-content/uploads/2024/07/godot4gamebasefolder1-215x300.png 215w" sizes="(max-width: 564px) 100vw, 564px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="564" height="786" src="./../../../../wp-content/uploads/2024/07/godot4gamebasefolder1.png" alt="" class="wp-image-251" srcset="./../../../../wp-content/uploads/2024/07/godot4gamebasefolder1.png 564w, ./../../../../wp-content/uploads/2024/07/godot4gamebasefolder1-215x300.png 215w" sizes="(max-width: 564px) 100vw, 564px" /></figure>
 
 
 
