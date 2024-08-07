@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.5.4</generator>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
 	<item>
 		<title>Welcome</title>
 		<link>./../../../news/new-website/index.html</link>
@@ -42,7 +42,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li><a href="./../../godot4/saveloaddelete/index.html" data-type="category" data-id="8">Godot 4 Save / Load / Delete Series</a></li>
 
 

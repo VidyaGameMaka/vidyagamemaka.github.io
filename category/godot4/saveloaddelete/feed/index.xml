@@ -18,7 +18,7 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.5.4</generator>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
 	<item>
 		<title>Godot 4 C# Tutorial #11 : Complete Non-Positional Audio for 2D Games</title>
 		<link>./../../../../godot4/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/index.html</link>
@@ -51,7 +51,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>1 AudioStreamPlayer &#8211; Music</li>
 
 
@@ -107,7 +107,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Initialization of Video Settings</li>
 
 

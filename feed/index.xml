@@ -12,14 +12,302 @@
 	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
 	<link>./../index.html</link>
 	<description>Godot C# Tutorials</description>
-	<lastBuildDate>Sun, 23 Jun 2024 19:24:31 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 07 Aug 2024 05:24:11 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.5.4</generator>
+	<generator>https://wordpress.org/?v=6.6.1</generator>
 	<item>
+		<title>Godot 4 C# Main Screen Plugin</title>
+		<link>./../godot4/gd4tutorials/godot-4-c-main-screen-plugin/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Wed, 07 Aug 2024 05:21:11 +0000</pubDate>
+				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
+		<guid isPermaLink="false">./../index.html?p=261</guid>
+
+					<description><![CDATA[You may create a new project from scratch or use your Godot 4 existing project to follow along with this [&#8230;]]]></description>
+										<content:encoded><![CDATA[
+<p>You may create a new project from scratch or use your Godot 4 existing project to follow along with this tutorial.</p>
+
+
+
+<p>Please copy this code that has been copied and corrected from: <a href="https://docs.godotengine.org/en/stable/tutorials/plugins/editor/making_main_screen_plugins.html">https://docs.godotengine.org/en/stable/tutorials/plugins/editor/making_main_screen_plugins.html</a></p>
+
+
+
+<div class="wp-block-kevinbatdorf-code-block-pro cbp-has-line-numbers" data-code-block-pro-font-family="Code-Pro-JetBrains-Mono" style="font-size:.875rem;font-family:Code-Pro-JetBrains-Mono,ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;--cbp-line-number-color:#D4D4D4;--cbp-line-number-width:calc(2 * 0.6 * .875rem);line-height:1.25rem;--cbp-tab-width:2;tab-size:var(--cbp-tab-width, 2)"><span style="display:block;padding:16px 0 0 16px;margin-bottom:-1px;width:100%;text-align:left;background-color:#1E1E1E"><svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14"><g fill="none" fill-rule="evenodd" transform="translate(1 1)"><circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle><circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle><circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle></g></svg></span><span role="button" tabindex="0" data-code="#if TOOLS
+using Godot;
+
+[Tool]
+public partial class MainScreenPlugin : EditorPlugin
+{
+    PackedScene MainPanel = ResourceLoader.Load&lt;PackedScene&gt;(&quot;res://addons/main_screen/main_panel.tscn&quot;);
+    Control MainPanelInstance;
+
+    public override void _EnterTree()
+    {
+        MainPanelInstance = (Control)MainPanel.Instantiate();
+        // Add the main panel to the editor's main viewport.
+        EditorInterface.Singleton.GetEditorMainScreen().AddChild(MainPanelInstance);
+        // Hide the main panel. Very much required.
+        _MakeVisible(false);
+    }
+
+    public override void _ExitTree()
+    {
+        if (MainPanelInstance != null)
+        {
+            MainPanelInstance.QueueFree();
+        }
+    }
+
+    public override bool _HasMainScreen()
+    {
+        return true;
+    }
+
+    public override void _MakeVisible(bool visible)
+    {
+        if (MainPanelInstance != null)
+        {
+            MainPanelInstance.Visible = visible;
+        }
+    }
+
+    public override string _GetPluginName()
+    {
+        return &quot;Main Screen Plugin&quot;;
+    }
+
+    public override Texture2D _GetPluginIcon()
+    {
+        // Must return some kind of Texture for the icon.
+        return EditorInterface.Singleton.GetEditorTheme().GetIcon(&quot;Node&quot;, &quot;EditorIcons&quot;);
+    }
+}
+#endif" style="color:#D4D4D4;display:none" aria-label="Copy" class="code-block-pro-copy-button"><svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path class="with-check" stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path><path class="without-check" stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg></span><pre class="shiki dark-plus" style="background-color: #1E1E1E" tabindex="0"><code><span class="line"><span style="color: #569CD6">#if </span><span style="color: #9CDCFE">TOOLS</span></span>
+<span class="line"><span style="color: #C586C0">using</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Godot</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">[</span><span style="color: #4EC9B0">Tool</span><span style="color: #D4D4D4">]</span></span>
+<span class="line"><span style="color: #569CD6">public</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">partial</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">class</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">MainScreenPlugin</span><span style="color: #D4D4D4"> : </span><span style="color: #4EC9B0">EditorPlugin</span></span>
+<span class="line"><span style="color: #D4D4D4">{</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #4EC9B0">PackedScene</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">MainPanel</span><span style="color: #D4D4D4"> = </span><span style="color: #9CDCFE">ResourceLoader</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">Load</span><span style="color: #D4D4D4">&lt;</span><span style="color: #4EC9B0">PackedScene</span><span style="color: #D4D4D4">&gt;(</span><span style="color: #CE9178">&quot;res://addons/main_screen/main_panel.tscn&quot;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #4EC9B0">Control</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">MainPanelInstance</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">public</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">override</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">void</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">_EnterTree</span><span style="color: #D4D4D4">()</span></span>
+<span class="line"><span style="color: #D4D4D4">    {</span></span>
+<span class="line"><span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">MainPanelInstance</span><span style="color: #D4D4D4"> = (</span><span style="color: #4EC9B0">Control</span><span style="color: #D4D4D4">)</span><span style="color: #9CDCFE">MainPanel</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">Instantiate</span><span style="color: #D4D4D4">();</span></span>
+<span class="line"><span style="color: #6A9955">        // Add the main panel to the editor&#39;s main viewport.</span></span>
+<span class="line"><span style="color: #D4D4D4">        </span><span style="color: #9CDCFE">EditorInterface</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">Singleton</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">GetEditorMainScreen</span><span style="color: #D4D4D4">().</span><span style="color: #DCDCAA">AddChild</span><span style="color: #D4D4D4">(</span><span style="color: #9CDCFE">MainPanelInstance</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #6A9955">        // Hide the main panel. Very much required.</span></span>
+<span class="line"><span style="color: #D4D4D4">        </span><span style="color: #DCDCAA">_MakeVisible</span><span style="color: #D4D4D4">(</span><span style="color: #569CD6">false</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">public</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">override</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">void</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">_ExitTree</span><span style="color: #D4D4D4">()</span></span>
+<span class="line"><span style="color: #D4D4D4">    {</span></span>
+<span class="line"><span style="color: #D4D4D4">        </span><span style="color: #C586C0">if</span><span style="color: #D4D4D4"> (</span><span style="color: #9CDCFE">MainPanelInstance</span><span style="color: #D4D4D4"> != </span><span style="color: #569CD6">null</span><span style="color: #D4D4D4">)</span></span>
+<span class="line"><span style="color: #D4D4D4">        {</span></span>
+<span class="line"><span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">MainPanelInstance</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">QueueFree</span><span style="color: #D4D4D4">();</span></span>
+<span class="line"><span style="color: #D4D4D4">        }</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">public</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">override</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">bool</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">_HasMainScreen</span><span style="color: #D4D4D4">()</span></span>
+<span class="line"><span style="color: #D4D4D4">    {</span></span>
+<span class="line"><span style="color: #D4D4D4">        </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">true</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">public</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">override</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">void</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">_MakeVisible</span><span style="color: #D4D4D4">(</span><span style="color: #569CD6">bool</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">visible</span><span style="color: #D4D4D4">)</span></span>
+<span class="line"><span style="color: #D4D4D4">    {</span></span>
+<span class="line"><span style="color: #D4D4D4">        </span><span style="color: #C586C0">if</span><span style="color: #D4D4D4"> (</span><span style="color: #9CDCFE">MainPanelInstance</span><span style="color: #D4D4D4"> != </span><span style="color: #569CD6">null</span><span style="color: #D4D4D4">)</span></span>
+<span class="line"><span style="color: #D4D4D4">        {</span></span>
+<span class="line"><span style="color: #D4D4D4">            </span><span style="color: #9CDCFE">MainPanelInstance</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">Visible</span><span style="color: #D4D4D4"> = </span><span style="color: #9CDCFE">visible</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">        }</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">public</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">override</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">string</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">_GetPluginName</span><span style="color: #D4D4D4">()</span></span>
+<span class="line"><span style="color: #D4D4D4">    {</span></span>
+<span class="line"><span style="color: #D4D4D4">        </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #CE9178">&quot;Main Screen Plugin&quot;</span><span style="color: #D4D4D4">;</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #D4D4D4">    </span><span style="color: #569CD6">public</span><span style="color: #D4D4D4"> </span><span style="color: #569CD6">override</span><span style="color: #D4D4D4"> </span><span style="color: #4EC9B0">Texture2D</span><span style="color: #D4D4D4"> </span><span style="color: #DCDCAA">_GetPluginIcon</span><span style="color: #D4D4D4">()</span></span>
+<span class="line"><span style="color: #D4D4D4">    {</span></span>
+<span class="line"><span style="color: #6A9955">        // Must return some kind of Texture for the icon.</span></span>
+<span class="line"><span style="color: #D4D4D4">        </span><span style="color: #C586C0">return</span><span style="color: #D4D4D4"> </span><span style="color: #9CDCFE">EditorInterface</span><span style="color: #D4D4D4">.</span><span style="color: #9CDCFE">Singleton</span><span style="color: #D4D4D4">.</span><span style="color: #DCDCAA">GetEditorTheme</span><span style="color: #D4D4D4">().</span><span style="color: #DCDCAA">GetIcon</span><span style="color: #D4D4D4">(</span><span style="color: #CE9178">&quot;Node&quot;</span><span style="color: #D4D4D4">, </span><span style="color: #CE9178">&quot;EditorIcons&quot;</span><span style="color: #D4D4D4">);</span></span>
+<span class="line"><span style="color: #D4D4D4">    }</span></span>
+<span class="line"><span style="color: #D4D4D4">}</span></span>
+<span class="line"><span style="color: #569CD6">#endif</span></span></code></pre></div>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Godot 4 &#8211; Save/Load/Delete System Documentation</title>
+		<link>./../godot4/gd4tutorials/godot-4-save-load-delete-system-documentation/index.html</link>
+		
+		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
+		<pubDate>Mon, 01 Jul 2024 22:03:55 +0000</pubDate>
+				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
+		<guid isPermaLink="false">./../index.html?p=241</guid>
+
+					<description><![CDATA[Table of Contents Setting up a Project Renaming the Project Gamebase Folder Structure]]></description>
+										<content:encoded><![CDATA[
+<h3 class="wp-block-heading">Table of Contents</h3>
+
+
+
+<ul class="wp-block-list">
+<li><a href="#set" data-type="internal" data-id="#set">Setting up a Project</a></li>
+
+
+
+<li><a href="#renamingtheproject" data-type="internal" data-id="#renamingtheproject">Renaming the Project</a></li>
+
+
+
+<li><a href="#gamebasefolderstructure">Gamebase Folder Structure</a></li>
+</ul>
+
+
+
+<p></p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+
+
+
+<h3 class="wp-block-heading" id="settingupaproject">Setting up a Project</h3>
+
+
+
+<ul class="wp-block-list">
+<li>Download the latest version from: <a href="https://github.com/VidyaGameMaka/GameBase_Godot4">https://github.com/VidyaGameMaka/GameBase_Godot4</a> </li>
+
+
+
+<li>Click on the green code button and click Download Zip. You can also download the zip file using this direct link: <a href="https://github.com/VidyaGameMaka/GameBase_Godot4/archive/refs/heads/main.zip">https://github.com/VidyaGameMaka/GameBase_Godot4/archive/refs/heads/main.zip</a></li>
+
+
+
+<li>Extract the Zip file into a folder where you store your Godot 4 game projects.</li>
+
+
+
+<li>Open Godot 4. You must use the .NET version of Godot 4, have either <a href="./../godot4/godot-4-vs-code-net-8-installation/index.html" data-type="post" data-id="203">VS Code</a> or Visual Studio configured and .NET 8 installed.</li>
+
+
+
+<li>Click Import then browse to where you extracted the files. Click on the project.godot file and click open.</li>
+
+
+
+<li>Click Import &amp; Edit</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+
+
+
+<h3 class="wp-block-heading" id="renamingtheproject">Renaming the Project</h3>
+
+
+
+<ul class="wp-block-list">
+<li>On the top menu. Click <strong>Project</strong> -> <strong>Project Settings</strong></li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="888" height="737" src="./../wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu.png" alt="" class="wp-image-247" srcset="./../wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu.png 888w, ./../wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu-300x249.png 300w, ./../wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu-768x637.png 768w" sizes="(max-width: 888px) 100vw, 888px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Click on the <strong>General </strong>Tab</li>
+
+
+
+<li>On the left side Menu under the <strong>Application</strong> category click <strong>Config</strong></li>
+
+
+
+<li>Change the <strong>Name </strong>field to the name you want your game to be named.</li>
+
+
+
+<li>Click <strong>close</strong> to save your changes.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="388" src="./../wp-content/uploads/2024/07/godot4gamebaseprojectname-1024x388.png" alt="" class="wp-image-248" srcset="./../wp-content/uploads/2024/07/godot4gamebaseprojectname-1024x388.png 1024w, ./../wp-content/uploads/2024/07/godot4gamebaseprojectname-300x114.png 300w, ./../wp-content/uploads/2024/07/godot4gamebaseprojectname-768x291.png 768w, ./../wp-content/uploads/2024/07/godot4gamebaseprojectname-1536x581.png 1536w, ./../wp-content/uploads/2024/07/godot4gamebaseprojectname.png 1791w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide"/>
+
+
+
+<h3 class="wp-block-heading" id="gamebasefolderstructure">Gamebase Folder Structure</h3>
+
+
+
+<ul class="wp-block-list">
+<li><strong>GameBase</strong> &#8211; The root of your primary game project. Other plugins and addons should be stored outside of GameBase.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="564" height="786" src="./../wp-content/uploads/2024/07/godot4gamebasefolder1.png" alt="" class="wp-image-251" srcset="./../wp-content/uploads/2024/07/godot4gamebasefolder1.png 564w, ./../wp-content/uploads/2024/07/godot4gamebasefolder1-215x300.png 215w" sizes="(max-width: 564px) 100vw, 564px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Audio</strong> &#8211; Where audio files should be stored. There are 3 folders inside the Audio folder:
+<ul class="wp-block-list">
+<li>Music</li>
+
+
+
+<li>SFX</li>
+
+
+
+<li>Voice</li>
+</ul>
+</li>
+
+
+
+<li>The default_bus_layout is stored in the root of the Audio Folder. This file tells Godot how many busses your game has.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="903" height="657" src="./../wp-content/uploads/2024/07/godot4gamebaseaudiofolder.png" alt="" class="wp-image-252" srcset="./../wp-content/uploads/2024/07/godot4gamebaseaudiofolder.png 903w, ./../wp-content/uploads/2024/07/godot4gamebaseaudiofolder-300x218.png 300w, ./../wp-content/uploads/2024/07/godot4gamebaseaudiofolder-768x559.png 768w" sizes="(max-width: 903px) 100vw, 903px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li><strong>AutoLoad</strong> &#8211; Contains scripts and godot scenes that are automatically loaded when the game is started. Gamebase comes preconfigured with the optimal autoload sequence.</li>
+</ul>
+
+
+
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="603" height="719" src="./../wp-content/uploads/2024/07/godot4gamebaseautoloadfolder.png" alt="" class="wp-image-253" srcset="./../wp-content/uploads/2024/07/godot4gamebaseautoloadfolder.png 603w, ./../wp-content/uploads/2024/07/godot4gamebaseautoloadfolder-252x300.png 252w" sizes="(max-width: 603px) 100vw, 603px" /></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Godot 4, VS Code &#038; .NET 8 Installation &#038; Configuration</title>
 		<link>./../godot4/godot-4-vs-code-net-8-installation/index.html</link>
 		
@@ -35,9 +323,9 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li><a href="#Godot4CInstall" data-type="internal" data-id="#Godot4CInstall"><strong>Godot 4 C# Installation Instructions</strong></a>
-<ul>
+<ul class="wp-block-list">
 <li>Download: <a href="https://godotengine.org/">https://godotengine.org/</a></li>
 </ul>
 </li>
@@ -45,7 +333,7 @@
 
 
 <li><strong><a href="#NETSDK" data-type="internal" data-id="#NETSDK">.NET SDK 8 Installation</a></strong>
-<ul>
+<ul class="wp-block-list">
 <li>Download: <a href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a></li>
 </ul>
 </li>
@@ -53,7 +341,7 @@
 
 
 <li><strong><a href="#vscodeinstallation">VS Code Installation</a></strong>
-<ul>
+<ul class="wp-block-list">
 <li>Download: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
 </ul>
 </li>
@@ -85,7 +373,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Download Godot 4 .Net Version: <a href="https://godotengine.org/">https://godotengine.org/</a></li>
 
 
@@ -127,7 +415,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li><strong>Download .NET 8 SDK:</strong> <a href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a></li>
 
 
@@ -149,7 +437,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Download VS Code: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></li>
 
 
@@ -167,11 +455,11 @@
 
 
 
-<figure class="wp-block-image size-large"><img fetchpriority="high" decoding="async" width="1024" height="815" src="./../wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png" alt="" class="wp-image-205" srcset="./../wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png 1024w, ./../wp-content/uploads/2024/06/vscode-additional-tasks-300x239.png 300w, ./../wp-content/uploads/2024/06/vscode-additional-tasks-768x611.png 768w, ./../wp-content/uploads/2024/06/vscode-additional-tasks.png 1296w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="815" src="./../wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png" alt="" class="wp-image-205" srcset="./../wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png 1024w, ./../wp-content/uploads/2024/06/vscode-additional-tasks-300x239.png 300w, ./../wp-content/uploads/2024/06/vscode-additional-tasks-768x611.png 768w, ./../wp-content/uploads/2024/06/vscode-additional-tasks.png 1296w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Click Next</li>
 
 
@@ -193,7 +481,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Open Visual Studio Code</li>
 
 
@@ -203,11 +491,11 @@
 
 
 
-<figure class="wp-block-image size-full"><img decoding="async" width="567" height="779" src="./../wp-content/uploads/2024/06/vscode-extensions-menu.png" alt="" class="wp-image-207" srcset="./../wp-content/uploads/2024/06/vscode-extensions-menu.png 567w, ./../wp-content/uploads/2024/06/vscode-extensions-menu-218x300.png 218w" sizes="(max-width: 567px) 100vw, 567px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="567" height="779" src="./../wp-content/uploads/2024/06/vscode-extensions-menu.png" alt="" class="wp-image-207" srcset="./../wp-content/uploads/2024/06/vscode-extensions-menu.png 567w, ./../wp-content/uploads/2024/06/vscode-extensions-menu-218x300.png 218w" sizes="(max-width: 567px) 100vw, 567px" /></figure>
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>In the Search Box type: <strong>C# Dev Kit</strong></li>
 
 
@@ -217,17 +505,17 @@
 
 
 
-<figure class="wp-block-image size-full"><img decoding="async" width="928" height="744" src="./../wp-content/uploads/2024/06/vscode_c_dev_kit.png" alt="" class="wp-image-208" srcset="./../wp-content/uploads/2024/06/vscode_c_dev_kit.png 928w, ./../wp-content/uploads/2024/06/vscode_c_dev_kit-300x241.png 300w, ./../wp-content/uploads/2024/06/vscode_c_dev_kit-768x616.png 768w" sizes="(max-width: 928px) 100vw, 928px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="928" height="744" src="./../wp-content/uploads/2024/06/vscode_c_dev_kit.png" alt="" class="wp-image-208" srcset="./../wp-content/uploads/2024/06/vscode_c_dev_kit.png 928w, ./../wp-content/uploads/2024/06/vscode_c_dev_kit-300x241.png 300w, ./../wp-content/uploads/2024/06/vscode_c_dev_kit-768x616.png 768w" sizes="(max-width: 928px) 100vw, 928px" /></figure>
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li><strong>Optional:</strong> Search for and Install: <strong>IntelliCode for C# Dev Kit</strong>. This extension is not required but will assist you with writing code.</li>
 
 
 
 <li><strong>Optional:</strong> Search for and Install: <strong>C# Tools for Godot</strong>
-<ul>
+<ul class="wp-block-list">
 <li><strong>Additional configuration for this module is required.</strong> Please visit: <a href="https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode">https://marketplace.visualstudio.com/items?itemName=neikeq.godot-csharp-vscode</a> for further instructions.</li>
 </ul>
 </li>
@@ -243,7 +531,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Open Godot. When you open Godot, it will open with the Project Manager.</li>
 
 
@@ -289,7 +577,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Click On: <strong>Editor -> Editor Settings</strong></li>
 </ul>
 
@@ -299,7 +587,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Scroll the left menu to the very bottom. We are specifically looking for the <strong>Dotnet</strong> category then <strong>Editor</strong>.</li>
 
 
@@ -333,7 +621,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>To create a C# Solution click: <strong>Project -> Tools -> C# -> Create C# solution</strong></li>
 </ul>
 
@@ -351,7 +639,7 @@
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Install the following extension in VS Code: <strong>EditorConfig for VS Code</strong></li>
 
 
@@ -917,7 +1205,7 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>1 AudioStreamPlayer &#8211; Music</li>
 
 
@@ -973,7 +1261,7 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 
 
 
-<ul>
+<ul class="wp-block-list">
 <li>Initialization of Video Settings</li>
 
 
@@ -1168,108 +1456,6 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 
 
 <p><a href="https://github.com/VidyaGameMaka/godot4tutorial">https://github.com/VidyaGameMaka/godot4tutorial</a></p>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Godot 4 C# Tutorial #5 : Animating like a Unity Programmer</title>
-		<link>./../godot4/godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html</link>
-		
-		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
-		<pubDate>Sat, 22 Jun 2024 18:16:10 +0000</pubDate>
-				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
-		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../index.html?p=107</guid>
-
-					<description><![CDATA[To get started we will need some sprites or sprite-sheets. I have created sprite-sheets specifically for use in Godot which [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/nwbJ6gdeiHc?si=-WZHzvD96JfNZUq7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
-<p>To get started we will need some sprites or sprite-sheets. I have created sprite-sheets specifically for use in Godot which can be downloaded from my GIT repo. You can use your own sprite-sheets also.</p>
-
-
-
-<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-
-
-
-<p>Dino Images Zip: <a href="https://github.com/VidyaGameMaka/godot4tutorial/blob/main/FreeArt/DinoCharacter/FreeDinoSprite.zip">https://github.com/VidyaGameMaka/godot4tutorial/blob/main/FreeArt/DinoCharacter/FreeDinoSprite.zip</a></p>
-
-
-
-<p>If you are not following along with the previous tutorials that is fine, this is a standalone tutorial.<br>Drag the sprite sheets into:<br>Prefabs/Characters/Dino</p>
-
-
-
-<p>Create a new node and call it: DinoPlayer_PFB</p>
-
-
-
-<p>In folder: Prefabs/Characters/Dino</p>
-
-
-
-<ul>
-<li>CharacterBody2D
-<ul>
-<li>Sprite</li>
-
-
-
-<li>CollisionShape2D</li>
-
-
-
-<li>AnimationPlayer</li>
-</ul>
-</li>
-</ul>
-]]></content:encoded>
-					
-		
-		
-			</item>
-		<item>
-		<title>Godot 4 C# Tutorial #4 : Making the Main Menu</title>
-		<link>./../godot4/godot-4-c-tutorial-4-making-the-main-menu/index.html</link>
-		
-		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
-		<pubDate>Sat, 22 Jun 2024 18:02:25 +0000</pubDate>
-				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
-		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../index.html?p=99</guid>
-
-					<description><![CDATA[Please download this tutorial&#8217;s resources from github. 🌟Tutorial Links 🌟 Download: https://github.com/VidyaGameMaka/godot4tutorial/ Click on the green code button then click [&#8230;]]]></description>
-										<content:encoded><![CDATA[
-<iframe loading="lazy" width="1120" height="630" src="https://www.youtube.com/embed/I0QzwAQJymY?si=W1fobEbA9JYUVON-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-
-
-<p>Please download this tutorial&#8217;s resources from github.</p>
-
-
-
-<p><img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /><strong>Tutorial Links</strong> <img src="https://s.w.org/images/core/emoji/15.0.3/72x72/1f31f.png" alt="🌟" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
-
-
-
-<p>Download: <a href="https://github.com/VidyaGameMaka/godot4tutorial/">https://github.com/VidyaGameMaka/godot4tutorial/</a></p>
-
-
-
-<p>Click on the green code button then click on download zip. Unzip the file and open the Godot project in the Tutorial 4 folder.</p>
-
-
-
-<p>In this tutorial I will be reviewing the main menu that will utilize the save/load/delete system.</p>
-
-
-
-<p>If you need a refresher on how to setup menu Buttons, Labels and Signals please refer to <a href="./../2024/06/22/godot-4-c-tutorial-2-creating-user-interfaces-reference-nodes-receive-node-signals/index.html" data-type="post" data-id="75">Tutorial #2</a>.</p>
 ]]></content:encoded>
 					
 		
