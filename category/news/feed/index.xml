@@ -9,8 +9,8 @@
 
 <channel>
 	<title>News &#8211; VidyaGameMaka</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../index.html</link>
+	<atom:link href="/category/news/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Godot C# Tutorials</description>
 	<lastBuildDate>Sun, 23 Jun 2024 17:40:28 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,16 +21,16 @@
 	<generator>https://wordpress.org/?v=6.6.1</generator>
 	<item>
 		<title>Welcome</title>
-		<link>./../../../news/new-website/index.html</link>
+		<link>/news/new-website/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sun, 16 Jun 2024 10:32:52 +0000</pubDate>
 				<category><![CDATA[News]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=43</guid>
+		<guid isPermaLink="false">/?p=43</guid>
 
 					<description><![CDATA[I&#8217;ve put this website together to offer a more cohesive and comprehensive experience for you! 🔥 Godot 4 Tutorials I [&#8230;]]]></description>
 										<content:encoded><![CDATA[
-<figure class="wp-block-image alignright size-full"><img fetchpriority="high" decoding="async" width="466" height="819" src="./../../../wp-content/uploads/2024/06/Vidya-Pose-1-Transparent_Flipped.png" alt="" class="wp-image-160" srcset="./../../../wp-content/uploads/2024/06/Vidya-Pose-1-Transparent_Flipped.png 466w, ./../../../wp-content/uploads/2024/06/Vidya-Pose-1-Transparent_Flipped-171x300.png 171w" sizes="(max-width: 466px) 100vw, 466px" /></figure>
+<figure class="wp-block-image alignright size-full"><img fetchpriority="high" decoding="async" width="466" height="819" src="/wp-content/uploads/2024/06/Vidya-Pose-1-Transparent_Flipped.png" alt="" class="wp-image-160" srcset="/wp-content/uploads/2024/06/Vidya-Pose-1-Transparent_Flipped.png 466w, /wp-content/uploads/2024/06/Vidya-Pose-1-Transparent_Flipped-171x300.png 171w" sizes="(max-width: 466px) 100vw, 466px" /></figure>
 
 
 
@@ -43,11 +43,11 @@
 
 
 <ul class="wp-block-list">
-<li><a href="./../../godot4/saveloaddelete/index.html" data-type="category" data-id="8">Godot 4 Save / Load / Delete Series</a></li>
+<li><a href="/category/godot4/saveloaddelete/" data-type="category" data-id="8">Godot 4 Save / Load / Delete Series</a></li>
 
 
 
-<li><a href="./../../godot4/gd4tutorials/index.html" data-type="category" data-id="7">Godot 4 Standalone Tutorials</a></li>
+<li><a href="/category/godot4/gd4tutorials/" data-type="category" data-id="7">Godot 4 Standalone Tutorials</a></li>
 </ul>
 
 

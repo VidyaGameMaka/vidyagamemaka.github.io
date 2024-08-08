@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Godot4 &#8211; VidyaGameMaka</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../index.html</link>
+	<atom:link href="/category/godot4/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Godot C# Tutorials</description>
 	<lastBuildDate>Wed, 07 Aug 2024 06:45:17 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,12 +21,12 @@
 	<generator>https://wordpress.org/?v=6.6.1</generator>
 	<item>
 		<title>Godot 4 C# Main Screen Plugin</title>
-		<link>./../../../godot4/gd4tutorials/godot-4-c-main-screen-plugin/index.html</link>
+		<link>/godot4/gd4tutorials/godot-4-c-main-screen-plugin/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Wed, 07 Aug 2024 05:21:11 +0000</pubDate>
 				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=261</guid>
+		<guid isPermaLink="false">/?p=261</guid>
 
 					<description><![CDATA[You may create a new project from scratch or use your Godot 4 existing project to follow along with this [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -150,12 +150,12 @@ public partial class MainScreenPlugin : EditorPlugin
 			</item>
 		<item>
 		<title>Godot 4 &#8211; Save/Load/Delete System Documentation</title>
-		<link>./../../../godot4/gd4tutorials/godot-4-save-load-delete-system-documentation/index.html</link>
+		<link>/godot4/gd4tutorials/godot-4-save-load-delete-system-documentation/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Mon, 01 Jul 2024 22:03:55 +0000</pubDate>
 				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=241</guid>
+		<guid isPermaLink="false">/?p=241</guid>
 
 					<description><![CDATA[Table of Contents Setting up a Project Renaming the Project Gamebase Folder Structure]]></description>
 										<content:encoded><![CDATA[
@@ -202,7 +202,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<li>Open Godot 4. You must use the .NET version of Godot 4, have either <a href="./../../../godot4/godot-4-vs-code-net-8-installation/index.html" data-type="post" data-id="203">VS Code</a> or Visual Studio configured and .NET 8 installed.</li>
+<li>Open Godot 4. You must use the .NET version of Godot 4, have either <a href="/godot4/godot-4-vs-code-net-8-installation/" data-type="post" data-id="203">VS Code</a> or Visual Studio configured and .NET 8 installed.</li>
 
 
 
@@ -229,7 +229,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="888" height="737" src="./../../../wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu.png" alt="" class="wp-image-247" srcset="./../../../wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu.png 888w, ./../../../wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu-300x249.png 300w, ./../../../wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu-768x637.png 768w" sizes="(max-width: 888px) 100vw, 888px" /></figure>
+<figure class="wp-block-image size-full"><img fetchpriority="high" decoding="async" width="888" height="737" src="/wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu.png" alt="" class="wp-image-247" srcset="/wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu.png 888w, /wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu-300x249.png 300w, /wp-content/uploads/2024/07/godot4gamebaseprojectsettingsmenu-768x637.png 768w" sizes="(max-width: 888px) 100vw, 888px" /></figure>
 
 
 
@@ -251,7 +251,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="388" src="./../../../wp-content/uploads/2024/07/godot4gamebaseprojectname-1024x388.png" alt="" class="wp-image-248" srcset="./../../../wp-content/uploads/2024/07/godot4gamebaseprojectname-1024x388.png 1024w, ./../../../wp-content/uploads/2024/07/godot4gamebaseprojectname-300x114.png 300w, ./../../../wp-content/uploads/2024/07/godot4gamebaseprojectname-768x291.png 768w, ./../../../wp-content/uploads/2024/07/godot4gamebaseprojectname-1536x581.png 1536w, ./../../../wp-content/uploads/2024/07/godot4gamebaseprojectname.png 1791w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="388" src="/wp-content/uploads/2024/07/godot4gamebaseprojectname-1024x388.png" alt="" class="wp-image-248" srcset="/wp-content/uploads/2024/07/godot4gamebaseprojectname-1024x388.png 1024w, /wp-content/uploads/2024/07/godot4gamebaseprojectname-300x114.png 300w, /wp-content/uploads/2024/07/godot4gamebaseprojectname-768x291.png 768w, /wp-content/uploads/2024/07/godot4gamebaseprojectname-1536x581.png 1536w, /wp-content/uploads/2024/07/godot4gamebaseprojectname.png 1791w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -269,7 +269,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="564" height="786" src="./../../../wp-content/uploads/2024/07/godot4gamebasefolder1.png" alt="" class="wp-image-251" srcset="./../../../wp-content/uploads/2024/07/godot4gamebasefolder1.png 564w, ./../../../wp-content/uploads/2024/07/godot4gamebasefolder1-215x300.png 215w" sizes="(max-width: 564px) 100vw, 564px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="564" height="786" src="/wp-content/uploads/2024/07/godot4gamebasefolder1.png" alt="" class="wp-image-251" srcset="/wp-content/uploads/2024/07/godot4gamebasefolder1.png 564w, /wp-content/uploads/2024/07/godot4gamebasefolder1-215x300.png 215w" sizes="(max-width: 564px) 100vw, 564px" /></figure>
 
 
 
@@ -295,7 +295,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="903" height="657" src="./../../../wp-content/uploads/2024/07/godot4gamebaseaudiofolder.png" alt="" class="wp-image-252" srcset="./../../../wp-content/uploads/2024/07/godot4gamebaseaudiofolder.png 903w, ./../../../wp-content/uploads/2024/07/godot4gamebaseaudiofolder-300x218.png 300w, ./../../../wp-content/uploads/2024/07/godot4gamebaseaudiofolder-768x559.png 768w" sizes="(max-width: 903px) 100vw, 903px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="903" height="657" src="/wp-content/uploads/2024/07/godot4gamebaseaudiofolder.png" alt="" class="wp-image-252" srcset="/wp-content/uploads/2024/07/godot4gamebaseaudiofolder.png 903w, /wp-content/uploads/2024/07/godot4gamebaseaudiofolder-300x218.png 300w, /wp-content/uploads/2024/07/godot4gamebaseaudiofolder-768x559.png 768w" sizes="(max-width: 903px) 100vw, 903px" /></figure>
 
 
 
@@ -305,7 +305,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="603" height="719" src="./../../../wp-content/uploads/2024/07/godot4gamebaseautoloadfolder.png" alt="" class="wp-image-253" srcset="./../../../wp-content/uploads/2024/07/godot4gamebaseautoloadfolder.png 603w, ./../../../wp-content/uploads/2024/07/godot4gamebaseautoloadfolder-252x300.png 252w" sizes="(max-width: 603px) 100vw, 603px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="603" height="719" src="/wp-content/uploads/2024/07/godot4gamebaseautoloadfolder.png" alt="" class="wp-image-253" srcset="/wp-content/uploads/2024/07/godot4gamebaseautoloadfolder.png 603w, /wp-content/uploads/2024/07/godot4gamebaseautoloadfolder-252x300.png 252w" sizes="(max-width: 603px) 100vw, 603px" /></figure>
 ]]></content:encoded>
 					
 		
@@ -313,13 +313,13 @@ public partial class MainScreenPlugin : EditorPlugin
 			</item>
 		<item>
 		<title>Godot 4, VS Code &#038; .NET 8 Installation &#038; Configuration</title>
-		<link>./../../../godot4/godot-4-vs-code-net-8-installation/index.html</link>
+		<link>/godot4/godot-4-vs-code-net-8-installation/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sun, 23 Jun 2024 16:10:54 +0000</pubDate>
 				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=203</guid>
+		<guid isPermaLink="false">/?p=203</guid>
 
 					<description><![CDATA[This is a brief tutorial covering installation of Godot 4 C# and required components. Godot 4 C# Installation Instructions .NET [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -459,7 +459,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="815" src="./../../../wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png" alt="" class="wp-image-205" srcset="./../../../wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png 1024w, ./../../../wp-content/uploads/2024/06/vscode-additional-tasks-300x239.png 300w, ./../../../wp-content/uploads/2024/06/vscode-additional-tasks-768x611.png 768w, ./../../../wp-content/uploads/2024/06/vscode-additional-tasks.png 1296w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="815" src="/wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png" alt="" class="wp-image-205" srcset="/wp-content/uploads/2024/06/vscode-additional-tasks-1024x815.png 1024w, /wp-content/uploads/2024/06/vscode-additional-tasks-300x239.png 300w, /wp-content/uploads/2024/06/vscode-additional-tasks-768x611.png 768w, /wp-content/uploads/2024/06/vscode-additional-tasks.png 1296w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -495,7 +495,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="567" height="779" src="./../../../wp-content/uploads/2024/06/vscode-extensions-menu.png" alt="" class="wp-image-207" srcset="./../../../wp-content/uploads/2024/06/vscode-extensions-menu.png 567w, ./../../../wp-content/uploads/2024/06/vscode-extensions-menu-218x300.png 218w" sizes="(max-width: 567px) 100vw, 567px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="567" height="779" src="/wp-content/uploads/2024/06/vscode-extensions-menu.png" alt="" class="wp-image-207" srcset="/wp-content/uploads/2024/06/vscode-extensions-menu.png 567w, /wp-content/uploads/2024/06/vscode-extensions-menu-218x300.png 218w" sizes="(max-width: 567px) 100vw, 567px" /></figure>
 
 
 
@@ -509,7 +509,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="928" height="744" src="./../../../wp-content/uploads/2024/06/vscode_c_dev_kit.png" alt="" class="wp-image-208" srcset="./../../../wp-content/uploads/2024/06/vscode_c_dev_kit.png 928w, ./../../../wp-content/uploads/2024/06/vscode_c_dev_kit-300x241.png 300w, ./../../../wp-content/uploads/2024/06/vscode_c_dev_kit-768x616.png 768w" sizes="(max-width: 928px) 100vw, 928px" /></figure>
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="928" height="744" src="/wp-content/uploads/2024/06/vscode_c_dev_kit.png" alt="" class="wp-image-208" srcset="/wp-content/uploads/2024/06/vscode_c_dev_kit.png 928w, /wp-content/uploads/2024/06/vscode_c_dev_kit-300x241.png 300w, /wp-content/uploads/2024/06/vscode_c_dev_kit-768x616.png 768w" sizes="(max-width: 928px) 100vw, 928px" /></figure>
 
 
 
@@ -577,7 +577,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="632" src="./../../../wp-content/uploads/2024/06/godot4config1-1024x632.png" alt="" class="wp-image-215" srcset="./../../../wp-content/uploads/2024/06/godot4config1-1024x632.png 1024w, ./../../../wp-content/uploads/2024/06/godot4config1-300x185.png 300w, ./../../../wp-content/uploads/2024/06/godot4config1-768x474.png 768w, ./../../../wp-content/uploads/2024/06/godot4config1-1536x948.png 1536w, ./../../../wp-content/uploads/2024/06/godot4config1-2048x1265.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="632" src="/wp-content/uploads/2024/06/godot4config1-1024x632.png" alt="" class="wp-image-215" srcset="/wp-content/uploads/2024/06/godot4config1-1024x632.png 1024w, /wp-content/uploads/2024/06/godot4config1-300x185.png 300w, /wp-content/uploads/2024/06/godot4config1-768x474.png 768w, /wp-content/uploads/2024/06/godot4config1-1536x948.png 1536w, /wp-content/uploads/2024/06/godot4config1-2048x1265.png 2048w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -587,7 +587,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="227" src="./../../../wp-content/uploads/2024/06/godot4editorsettings-1024x227.png" alt="" class="wp-image-216" srcset="./../../../wp-content/uploads/2024/06/godot4editorsettings-1024x227.png 1024w, ./../../../wp-content/uploads/2024/06/godot4editorsettings-300x67.png 300w, ./../../../wp-content/uploads/2024/06/godot4editorsettings-768x171.png 768w, ./../../../wp-content/uploads/2024/06/godot4editorsettings.png 1031w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="227" src="/wp-content/uploads/2024/06/godot4editorsettings-1024x227.png" alt="" class="wp-image-216" srcset="/wp-content/uploads/2024/06/godot4editorsettings-1024x227.png 1024w, /wp-content/uploads/2024/06/godot4editorsettings-300x67.png 300w, /wp-content/uploads/2024/06/godot4editorsettings-768x171.png 768w, /wp-content/uploads/2024/06/godot4editorsettings.png 1031w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -609,7 +609,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="833" src="./../../../wp-content/uploads/2024/06/godot4dotnetconfig-1024x833.png" alt="" class="wp-image-218" srcset="./../../../wp-content/uploads/2024/06/godot4dotnetconfig-1024x833.png 1024w, ./../../../wp-content/uploads/2024/06/godot4dotnetconfig-300x244.png 300w, ./../../../wp-content/uploads/2024/06/godot4dotnetconfig-768x625.png 768w, ./../../../wp-content/uploads/2024/06/godot4dotnetconfig-1536x1249.png 1536w, ./../../../wp-content/uploads/2024/06/godot4dotnetconfig.png 1804w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="833" src="/wp-content/uploads/2024/06/godot4dotnetconfig-1024x833.png" alt="" class="wp-image-218" srcset="/wp-content/uploads/2024/06/godot4dotnetconfig-1024x833.png 1024w, /wp-content/uploads/2024/06/godot4dotnetconfig-300x244.png 300w, /wp-content/uploads/2024/06/godot4dotnetconfig-768x625.png 768w, /wp-content/uploads/2024/06/godot4dotnetconfig-1536x1249.png 1536w, /wp-content/uploads/2024/06/godot4dotnetconfig.png 1804w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -631,7 +631,7 @@ public partial class MainScreenPlugin : EditorPlugin
 
 
 
-<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="471" src="./../../../wp-content/uploads/2024/06/godot4createsolution-1024x471.png" alt="" class="wp-image-219" srcset="./../../../wp-content/uploads/2024/06/godot4createsolution-1024x471.png 1024w, ./../../../wp-content/uploads/2024/06/godot4createsolution-300x138.png 300w, ./../../../wp-content/uploads/2024/06/godot4createsolution-768x353.png 768w, ./../../../wp-content/uploads/2024/06/godot4createsolution-1536x706.png 1536w, ./../../../wp-content/uploads/2024/06/godot4createsolution.png 1658w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="471" src="/wp-content/uploads/2024/06/godot4createsolution-1024x471.png" alt="" class="wp-image-219" srcset="/wp-content/uploads/2024/06/godot4createsolution-1024x471.png 1024w, /wp-content/uploads/2024/06/godot4createsolution-300x138.png 300w, /wp-content/uploads/2024/06/godot4createsolution-768x353.png 768w, /wp-content/uploads/2024/06/godot4createsolution-1536x706.png 1536w, /wp-content/uploads/2024/06/godot4createsolution.png 1658w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
 
 
 
@@ -1141,13 +1141,13 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 			</item>
 		<item>
 		<title>Godot 4 C# OptionButton &#8212; Setup, Signals &#038; Unexpected Behaviour</title>
-		<link>./../../../godot4/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/index.html</link>
+		<link>/godot4/godot-4-c-optionbutton-setup-signals-unexpected-behaviour/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:56:22 +0000</pubDate>
 				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=139</guid>
+		<guid isPermaLink="false">/?p=139</guid>
 
 					<description><![CDATA[The OptionButton node offers the functionality of a drop-down list that allows a user to choose a single item from [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1179,13 +1179,13 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #11 : Complete Non-Positional Audio for 2D Games</title>
-		<link>./../../../godot4/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:54:04 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=136</guid>
+		<guid isPermaLink="false">/?p=136</guid>
 
 					<description><![CDATA[For the 2D games that I make it makes the most sense to me to have an Audio System that [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1243,13 +1243,13 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #10 : Video Menu</title>
-		<link>./../../../godot4/godot-4-c-tutorial-10-video-menu/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-10-video-menu/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:49:21 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=132</guid>
+		<guid isPermaLink="false">/?p=132</guid>
 
 					<description><![CDATA[In this tutorial I am going to dicuss Godot&#8217;s video modes and what I think will be the best Video [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1299,13 +1299,13 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #9 : Menu Switcher</title>
-		<link>./../../../godot4/godot-4-c-tutorial-9-menu-switcher/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-9-menu-switcher/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:46:01 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=129</guid>
+		<guid isPermaLink="false">/?p=129</guid>
 
 					<description><![CDATA[Welcome back to another awesome C# godot tutorial with Vidya! So far we&#8217;ve created a great save, load, delete sytem, [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1333,13 +1333,13 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #8 : Save File Obfuscation (Optional / Recommend Skipping)</title>
-		<link>./../../../godot4/godot-4-c-tutorial-8-save-file-obfuscation-optional-recommend-skipping/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-8-save-file-obfuscation-optional-recommend-skipping/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:43:09 +0000</pubDate>
 				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=126</guid>
+		<guid isPermaLink="false">/?p=126</guid>
 
 					<description><![CDATA[I recommend skipping this tutorial as it does more harm than good for your game development uses. If you&#8217;re interested [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1391,13 +1391,13 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #7 : How did Vidya figure out Godot C# stuff so fast?</title>
-		<link>./../../../godot4/godot-4-c-tutorial-7-how-did-vidya-figure-out-godot-c-stuff-so-fast/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-7-how-did-vidya-figure-out-godot-c-stuff-so-fast/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:36:10 +0000</pubDate>
 				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=124</guid>
+		<guid isPermaLink="false">/?p=124</guid>
 
 					<description><![CDATA[Alright, let&#8217;s do a little situation exercise. You&#8217;ve come from a background using Unity for the last five years or [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1433,13 +1433,13 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #6 : Audio Menu</title>
-		<link>./../../../godot4/119/index.html</link>
+		<link>/godot4/119/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:30:19 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=119</guid>
+		<guid isPermaLink="false">/?p=119</guid>
 
 					<description><![CDATA[In this tutorial we do an overview of the Audio Menu. I show how to setup Godot&#8217;s Audio Bus, change [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -1467,13 +1467,13 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case" style="color:#d8
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #5 : Animating like a Unity Programmer</title>
-		<link>./../../../godot4/godot-4-c-tutorial-5-animating-like-a-unity-programmer/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-5-animating-like-a-unity-programmer/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:16:10 +0000</pubDate>
 				<category><![CDATA[Godot 4 Standalone Tutorials]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../index.html?p=107</guid>
+		<guid isPermaLink="false">/?p=107</guid>
 
 					<description><![CDATA[To get started we will need some sprites or sprite-sheets. I have created sprite-sheets specifically for use in Godot which [&#8230;]]]></description>
 										<content:encoded><![CDATA[

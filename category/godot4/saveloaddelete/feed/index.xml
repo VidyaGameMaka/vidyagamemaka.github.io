@@ -9,8 +9,8 @@
 
 <channel>
 	<title>Godot 4 Save / Load / Delete Series &#8211; VidyaGameMaka</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../../../../index.html</link>
+	<atom:link href="/category/godot4/saveloaddelete/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
 	<description>Godot C# Tutorials</description>
 	<lastBuildDate>Sun, 23 Jun 2024 15:51:35 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,13 +21,13 @@
 	<generator>https://wordpress.org/?v=6.6.1</generator>
 	<item>
 		<title>Godot 4 C# Tutorial #11 : Complete Non-Positional Audio for 2D Games</title>
-		<link>./../../../../godot4/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-11-complete-non-positional-audio-for-2d-games/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:54:04 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../../index.html?p=136</guid>
+		<guid isPermaLink="false">/?p=136</guid>
 
 					<description><![CDATA[For the 2D games that I make it makes the most sense to me to have an Audio System that [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -85,13 +85,13 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #10 : Video Menu</title>
-		<link>./../../../../godot4/godot-4-c-tutorial-10-video-menu/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-10-video-menu/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:49:21 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../../index.html?p=132</guid>
+		<guid isPermaLink="false">/?p=132</guid>
 
 					<description><![CDATA[In this tutorial I am going to dicuss Godot&#8217;s video modes and what I think will be the best Video [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -141,13 +141,13 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #9 : Menu Switcher</title>
-		<link>./../../../../godot4/godot-4-c-tutorial-9-menu-switcher/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-9-menu-switcher/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:46:01 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../../index.html?p=129</guid>
+		<guid isPermaLink="false">/?p=129</guid>
 
 					<description><![CDATA[Welcome back to another awesome C# godot tutorial with Vidya! So far we&#8217;ve created a great save, load, delete sytem, [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -175,13 +175,13 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #6 : Audio Menu</title>
-		<link>./../../../../godot4/119/index.html</link>
+		<link>/godot4/119/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:30:19 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../../index.html?p=119</guid>
+		<guid isPermaLink="false">/?p=119</guid>
 
 					<description><![CDATA[In this tutorial we do an overview of the Audio Menu. I show how to setup Godot&#8217;s Audio Bus, change [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -209,13 +209,13 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #4 : Making the Main Menu</title>
-		<link>./../../../../godot4/godot-4-c-tutorial-4-making-the-main-menu/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-4-making-the-main-menu/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 18:02:25 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../../index.html?p=99</guid>
+		<guid isPermaLink="false">/?p=99</guid>
 
 					<description><![CDATA[Please download this tutorial&#8217;s resources from github. 🌟Tutorial Links 🌟 Download: https://github.com/VidyaGameMaka/godot4tutorial/ Click on the green code button then click [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -243,7 +243,7 @@
 
 
 
-<p>If you need a refresher on how to setup menu Buttons, Labels and Signals please refer to <a href="./../../../../2024/06/22/godot-4-c-tutorial-2-creating-user-interfaces-reference-nodes-receive-node-signals/index.html" data-type="post" data-id="75">Tutorial #2</a>.</p>
+<p>If you need a refresher on how to setup menu Buttons, Labels and Signals please refer to <a href="/2024/06/22/godot-4-c-tutorial-2-creating-user-interfaces-reference-nodes-receive-node-signals/" data-type="post" data-id="75">Tutorial #2</a>.</p>
 ]]></content:encoded>
 					
 		
@@ -251,13 +251,13 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #3 : Scene Manager &#8211; Change Scenes in Godot like a Unity DEV</title>
-		<link>./../../../../godot4/godot-4-c-tutorial-3-scene-manager-change-scenes-in-godot-like-a-unity-dev/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-3-scene-manager-change-scenes-in-godot-like-a-unity-dev/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 17:47:02 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../../index.html?p=78</guid>
+		<guid isPermaLink="false">/?p=78</guid>
 
 					<description><![CDATA[To follow along make sure that you download Tutorial #3 from github: https://github.com/VidyaGameMaka/godo&#8230; Click on the code button and choose [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -297,13 +297,13 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #2 : Creating User Interfaces &#8211; Reference nodes &#038; Receive node signals</title>
-		<link>./../../../../godot4/godot-4-c-tutorial-2-creating-user-interfaces-reference-nodes-receive-node-signals/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-2-creating-user-interfaces-reference-nodes-receive-node-signals/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 17:43:35 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../../index.html?p=75</guid>
+		<guid isPermaLink="false">/?p=75</guid>
 
 					<description><![CDATA[How to create a basic user interfaces and create references in C# to UI nodes as well as how to [&#8230;]]]></description>
 										<content:encoded><![CDATA[
@@ -327,13 +327,13 @@
 			</item>
 		<item>
 		<title>Godot 4 C# Tutorial #1 &#8211; Save / Load / Delete System</title>
-		<link>./../../../../godot4/godot-4-c-tutorial-1-save-load-delete-system/index.html</link>
+		<link>/godot4/godot-4-c-tutorial-1-save-load-delete-system/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
 		<pubDate>Sat, 22 Jun 2024 17:07:35 +0000</pubDate>
 				<category><![CDATA[Godot 4 Save / Load / Delete Series]]></category>
 		<category><![CDATA[Godot4]]></category>
-		<guid isPermaLink="false">./../../../../index.html?p=52</guid>
+		<guid isPermaLink="false">/?p=52</guid>
 
 					<description><![CDATA[I cover how to autoload a C# script in godot, setup two classes for saving and loading data as well [&#8230;]]]></description>
 										<content:encoded><![CDATA[
