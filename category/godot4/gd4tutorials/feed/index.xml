@@ -12,7 +12,7 @@
 	<atom:link href="/category/godot4/gd4tutorials/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>Godot C# Tutorials</description>
-	<lastBuildDate>Fri, 10 Jan 2025 02:57:18 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 12 Jan 2025 02:34:31 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -1308,7 +1308,7 @@ public partial class MainScreenPlugin : EditorPlugin
 		
 			</item>
 		<item>
-		<title>Godot 4 C# Tutorial #5 : Animating like a Unity Programmer</title>
+		<title>Godot 4 C# Tutorial #5 : Animate like a Unity Programmer</title>
 		<link>/godot4/godot-4-c-tutorial-5-animating-like-a-unity-programmer/</link>
 		
 		<dc:creator><![CDATA[VidyaGameMaka]]></dc:creator>
